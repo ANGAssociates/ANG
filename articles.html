@@ -175,46 +175,77 @@ footer { background:var(--c-dark); border-top:1px solid rgba(255,255,255,0.08); 
     <div class="container">
       <div class="section-label" data-en="Insights & Use Cases" data-de="Einblicke & Anwendungsfälle">Insights & Use Cases</div>
       <h1 class="section-title" data-en="AI in Life Sciences: Real-World Impact" data-de="KI in Life Sciences: Praxisnahe Wirkung">AI in Life Sciences: Real-World Impact</h1>
-      <p class="section-desc" data-en="20 expert articles exploring how AI, GenAI and Machine Learning are transforming Pharma, Diagnostics and Healthcare." data-de="20 Expertenartikel darüber, wie KI, GenAI und Machine Learning Pharma, Diagnostik und Healthcare transformieren.">20 expert articles exploring how AI, GenAI and Machine Learning are transforming Pharma, Diagnostics and Healthcare.</p>
+      <p class="section-desc" data-en="Explore our featured insights on how AI, GenAI and Machine Learning are transforming Pharma, Diagnostics and Healthcare." data-de="Entdecken Sie unsere ausgewaehlten Einblicke dazu, wie KI, GenAI und Machine Learning Pharma, Diagnostik und Healthcare transformieren.">Explore our featured insights on how AI, GenAI and Machine Learning are transforming Pharma, Diagnostics and Healthcare.</p>
     </div>
   </div>
+
   <div class="filters">
     <div class="container filters-inner">
-      <button class="filter-btn active" data-filter="all" data-en="All (20)" data-de="Alle (20)">All (20)</button>
-      <button class="filter-btn" data-filter="rd" data-en="AI for R&D (7)" data-de="KI für F&E (7)">AI for R&D (7)</button>
-      <button class="filter-btn" data-filter="com" data-en="AI for Commercial (7)" data-de="KI für Commercial (7)">AI for Commercial (7)</button>
-      <button class="filter-btn" data-filter="it" data-en="AI for Core IT (6)" data-de="KI für Core IT (6)">AI for Core IT (6)</button>
+      <button class="filter-btn active" data-filter="all" data-en="All (3)" data-de="Alle (3)">All (3)</button>
+      <button class="filter-btn" data-filter="rd" data-en="AI for R&D (1)" data-de="KI fuer F&E (1)">AI for R&D (1)</button>
+      <button class="filter-btn" data-filter="com" data-en="AI for Commercial (1)" data-de="KI fuer Commercial (1)">AI for Commercial (1)</button>
+      <button class="filter-btn" data-filter="it" data-en="AI for Core IT (1)" data-de="KI fuer Core IT (1)">AI for Core IT (1)</button>
     </div>
   </div>
+
   <div class="container">
-    <div class="articles-grid" id="articlesGrid"></div>
+    <div class="articles-grid" id="articlesGrid">
+      <a class="article-card" href="ai-pharma-rd.html" data-cat="rd">
+        <div class="article-top cat-rd"></div>
+        <div class="article-body">
+          <div class="article-cat cat-rd">AI FOR R&amp;D</div>
+          <h3>AI in Pharma R&amp;D</h3>
+          <p data-en="How AI and Machine Learning are transforming drug discovery, target identification and clinical development." data-de="Wie KI und Machine Learning Wirkstoffforschung, Zielidentifikation und klinische Entwicklung veraendern.">How AI and Machine Learning are transforming drug discovery, target identification and clinical development.</p>
+          <div class="article-tags">
+            <span class="article-tag">Drug Discovery</span>
+            <span class="article-tag">Clinical Development</span>
+            <span class="article-tag">Machine Learning</span>
+          </div>
+          <div class="article-meta">
+            <span>Mar 2026</span>
+            <span class="article-read" data-en="Read article" data-de="Artikel lesen">Read article</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="genai-commercial-life-sciences.html" data-cat="com">
+        <div class="article-top cat-com"></div>
+        <div class="article-body">
+          <div class="article-cat cat-com">AI FOR COMMERCIAL</div>
+          <h3>Generative AI in Commercial Life Sciences</h3>
+          <p data-en="How GenAI is improving content generation, HCP engagement and commercial effectiveness in Life Sciences." data-de="Wie GenAI Content-Erstellung, HCP-Interaktion und kommerzielle Effektivitaet in Life Sciences verbessert.">How GenAI is improving content generation, HCP engagement and commercial effectiveness in Life Sciences.</p>
+          <div class="article-tags">
+            <span class="article-tag">GenAI</span>
+            <span class="article-tag">HCP Engagement</span>
+            <span class="article-tag">Commercial Excellence</span>
+          </div>
+          <div class="article-meta">
+            <span>Mar 2026</span>
+            <span class="article-read" data-en="Read article" data-de="Artikel lesen">Read article</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="article-card" href="ai-core-it-pharma.html" data-cat="it">
+        <div class="article-top cat-it"></div>
+        <div class="article-body">
+          <div class="article-cat cat-it">AI FOR CORE IT</div>
+          <h3>AI in Core IT for Pharma</h3>
+          <p data-en="How AI is modernizing data platforms, automating IT operations and strengthening compliance in pharma IT." data-de="Wie KI Datenplattformen modernisiert, IT-Ablaeufe automatisiert und Compliance in der Pharma-IT staerkt.">How AI is modernizing data platforms, automating IT operations and strengthening compliance in pharma IT.</p>
+          <div class="article-tags">
+            <span class="article-tag">Core IT</span>
+            <span class="article-tag">Automation</span>
+            <span class="article-tag">Compliance</span>
+          </div>
+          <div class="article-meta">
+            <span>Mar 2026</span>
+            <span class="article-read" data-en="Read article" data-de="Artikel lesen">Read article</span>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
-
-<!-- ARTICLE VIEW -->
-<div class="article-page" id="articleView">
-  <div class="container article-page-inner">
-    <a href="#" class="article-back" id="articleBack" data-en="← Back to All Articles" data-de="← Zurück zu allen Artikeln">← Back to All Articles</a>
-    <div class="article-page-cat" id="apCat"></div>
-    <h1 id="apTitle"></h1>
-    <div class="article-page-meta">
-      <div class="author-badge">
-        <div class="author-avatar">A</div>
-        <div><strong>ANG Associates</strong><br><span style="font-size:0.78rem;" data-en="Life Sciences & AI Consulting" data-de="Life Sciences & KI Beratung">Life Sciences & AI Consulting</span></div>
-      </div>
-      <span id="apDate"></span>
-      <span id="apRead"></span>
-    </div>
-    <div class="article-page-content" id="apContent"></div>
-    <div class="article-page-tags" id="apTags"></div>
-    <div class="article-page-cta">
-      <h3 data-en="Interested in this topic?" data-de="Interessiert an diesem Thema?">Interested in this topic?</h3>
-      <p data-en="Let's discuss how we can apply these approaches to your organization." data-de="Lassen Sie uns besprechen, wie wir diese Ansätze in Ihrer Organisation anwenden können.">Let's discuss how we can apply these approaches to your organization.</p>
-      <a href="index.html#contact" class="btn btn-primary" data-en="Contact Us" data-de="Kontaktieren Sie uns">Contact Us</a>
-    </div>
-  </div>
-</div>
-
 <!-- FOOTER -->
 <footer>
   <div class="container footer-inner">
@@ -246,514 +277,59 @@ footer { background:var(--c-dark); border-top:1px solid rgba(255,255,255,0.08); 
   </div>
 </div>
 
+
 <script>
+const currentYear = new Date().getFullYear();
+document.querySelectorAll('footer span').forEach(el => {
+  el.innerHTML = el.innerHTML.replace('2026', currentYear);
+});
 
-// ===== ARTICLES DATA (20 articles, expanded, with tags) =====
-const articles = [
-  // --- AI for R&D (7) ---
-  {id:1,cat:'rd',slug:'ai-drug-target-identification-oncology',
-    tags:['Drug Discovery','Oncology','Machine Learning','Multi-Omics','GNN','Target Validation','Pharma R&D','GxP','GAMP 5'],
-    en:{title:'AI-Driven Drug Target Identification in Oncology',desc:'How ML models are accelerating the identification of novel therapeutic targets in solid tumors.',read:'10 min',date:'Mar 2026',
-      content:`<h3>The Challenge of Target Identification</h3>
-<p>Identifying viable drug targets in oncology remains one of the most resource-intensive and failure-prone stages in pharmaceutical R&D. The traditional approach — hypothesis-driven wet-lab experiments followed by years of biological validation — yields an average attrition rate exceeding 90% between target identification and Phase II proof-of-concept. For solid tumors, the complexity multiplies: heterogeneous tumor microenvironments, intricate signaling networks, and patient-to-patient variability make it exceedingly difficult to pinpoint targets that are both druggable and clinically meaningful.</p>
-<p>The pharmaceutical industry loses an estimated $2.6 billion per approved drug, with a significant portion attributable to pursuing targets that ultimately prove undruggable or clinically irrelevant. This represents not just a financial burden but a human cost: every year spent on a failed target is a year patients wait for effective therapies.</p>
+let currentLang = localStorage.getItem('ang_lang') || 'en';
+let activeFilter = 'all';
 
-<h3>The AI-Powered Approach</h3>
-<p>Machine learning models trained on integrated multi-omics data — spanning genomics, transcriptomics, proteomics, and metabolomics — are fundamentally changing how pharmaceutical companies identify and prioritize drug targets. Rather than evaluating candidates one at a time through sequential experiments, AI systems can simultaneously assess thousands of potential targets across multiple dimensions of biological relevance.</p>
-<p>Graph Neural Networks (GNNs) have emerged as particularly powerful tools in this domain. By modeling protein-protein interaction networks as mathematical graphs, GNNs can identify previously overlooked network nodes — proteins that serve as critical hubs in tumor-driving signaling pathways. These models capture complex topological relationships that traditional statistical methods miss, revealing non-obvious dependencies and synthetic lethality opportunities.</p>
-<p>Beyond GNNs, ensemble approaches combining random forests, gradient boosting, and deep learning autoencoders create robust multi-dimensional scoring systems. Each candidate target receives a composite score reflecting predicted druggability (based on structural features and binding pocket analysis), selectivity (estimated off-target binding profiles), and clinical relevance (correlation with patient outcomes in real-world datasets).</p>
-
-<h3>Implementation Architecture</h3>
-<p>A typical AI target identification pipeline integrates multiple data sources through a unified feature engineering layer. Public databases (UniProt, ChEMBL, TCGA) provide foundational biological knowledge, while proprietary experimental data from the sponsoring organization adds competitive differentiation. The pipeline typically consists of four stages: data ingestion and harmonization, feature extraction and embedding generation, multi-model ensemble scoring, and expert review with experimental validation planning.</p>
-<blockquote>The key insight is that AI doesn't replace scientific judgment — it amplifies it. The models surface candidates that merit experimental investigation, while domain experts evaluate biological plausibility and strategic fit.</blockquote>
-
-<h3>Measurable Outcomes</h3>
-<ul>
-<li>Up to 40% reduction in target validation timelines, from an average of 24 months to 14 months</li>
-<li>Higher confidence scoring for lead targets entering preclinical development, with a measured 2.3x improvement in preclinical-to-Phase I transition rates</li>
-<li>Seamless integration with existing LIMS systems and electronic laboratory notebooks, ensuring full data lineage and audit trails</li>
-<li>Discovery of three novel synthetic lethality pairs in pancreatic cancer models that traditional screening approaches had missed</li>
-</ul>
-
-<h3>Regulatory and Compliance Considerations for Switzerland & EU</h3>
-<p>Swiss pharma companies operating under Swissmedic and EMA regulatory frameworks can leverage these AI tools while maintaining full GxP compliance. The critical requirement is that model validation follows GAMP 5 principles adapted for machine learning: documented intended use, training data provenance, performance monitoring, and periodic revalidation triggers. The EMA's draft reflection paper on AI in drug development provides a pragmatic framework for integrating computational predictions into regulatory submissions.</p>
-<p>For Swiss-based organizations, the interplay between Swissmedic's national requirements and EMA's guidelines creates a dual-compliance challenge that demands careful documentation strategy. ANG Associates helps Life Sciences companies navigate this regulatory landscape, ensuring that AI-driven target identification programs are built on a foundation of scientific rigor and regulatory defensibility.</p>`},
-    de:{title:'KI-gestützte Wirkstoffziel-Identifikation in der Onkologie',desc:'Wie ML-Modelle die Identifizierung neuer therapeutischer Targets bei soliden Tumoren beschleunigen.',read:'10 Min.',date:'Mär. 2026',
-      content:`<h3>Die Herausforderung der Zielidentifikation</h3>
-<p>Die Identifikation tragfähiger Wirkstoffziele in der Onkologie gehört zu den ressourcenintensivsten und fehleranfälligsten Phasen der pharmazeutischen F&E. Der traditionelle Ansatz — hypothesengetriebene Nasslaborexperimente gefolgt von Jahren biologischer Validierung — ergibt eine durchschnittliche Ausfallrate von über 90% zwischen Zielidentifikation und Phase-II-Proof-of-Concept. Bei soliden Tumoren vervielfacht sich die Komplexität durch heterogene Tumormikroumgebungen, komplexe Signalnetzwerke und interindividuelle Variabilität.</p>
-<p>Die pharmazeutische Industrie verliert geschätzte 2,6 Milliarden Dollar pro zugelassenem Medikament, wobei ein erheblicher Teil auf die Verfolgung von Targets zurückzuführen ist, die sich letztendlich als nicht druggable oder klinisch irrelevant erweisen.</p>
-
-<h3>Der KI-gestützte Ansatz</h3>
-<p>Machine-Learning-Modelle, trainiert auf integrierten Multi-Omics-Daten — Genomik, Transkriptomik, Proteomik und Metabolomik — verändern grundlegend, wie Pharmaunternehmen Wirkstoffziele identifizieren und priorisieren. Anstatt Kandidaten einzeln durch sequenzielle Experimente zu evaluieren, können KI-Systeme gleichzeitig Tausende potenzieller Targets über mehrere Dimensionen biologischer Relevanz bewerten.</p>
-<p>Graph Neural Networks (GNNs) haben sich als besonders leistungsfähige Werkzeuge in diesem Bereich erwiesen. Indem sie Protein-Protein-Interaktionsnetzwerke als mathematische Graphen modellieren, können GNNs bisher übersehene Netzwerkknoten identifizieren — Proteine, die als kritische Knotenpunkte in tumorantreibenden Signalwegen dienen.</p>
-<p>Ensemble-Ansätze, die Random Forests, Gradient Boosting und Deep-Learning-Autoencoder kombinieren, erstellen robuste multidimensionale Bewertungssysteme. Jeder Kandidat erhält einen zusammengesetzten Score, der vorhergesagte Druggability, Selektivität und klinische Relevanz widerspiegelt.</p>
-
-<h3>Messbare Ergebnisse</h3>
-<ul>
-<li>Bis zu 40% Reduktion der Validierungszeiträume, von durchschnittlich 24 auf 14 Monate</li>
-<li>Höhere Konfidenz-Scores mit 2,3-facher Verbesserung der Übergangsraten von Präklinik zu Phase I</li>
-<li>Nahtlose Integration in bestehende LIMS-Systeme und elektronische Labornotizbücher</li>
-<li>Entdeckung von drei neuartigen synthetischen Letalitätspaaren in Pankreaskrebsmodellen</li>
-</ul>
-
-<h3>Regulatorische Aspekte für die Schweiz & EU</h3>
-<p>Schweizer Pharmaunternehmen unter Swissmedic- und EMA-Regelwerken können diese KI-Tools unter Einhaltung der GxP-Compliance nutzen. Die Modellvalidierung muss GAMP-5-Prinzipien folgen, angepasst für Machine Learning: dokumentierter Verwendungszweck, Trainingsdaten-Provenienz, Performance-Monitoring und periodische Revalidierungstrigger.</p>`}
-  },
-  {id:2,cat:'rd',slug:'genai-clinical-trial-protocol-design',
-    tags:['Clinical Trials','Generative AI','Protocol Design','Regulatory','FDA','EMA','Adaptive Design','LLM'],
-    en:{title:'GenAI for Accelerating Clinical Trial Protocol Design',desc:'Generative AI is transforming how sponsors design adaptive clinical trial protocols.',read:'9 min',date:'Feb 2026',
-      content:`<h3>The Protocol Design Bottleneck</h3>
-<p>Clinical trial protocol design is a critical path activity that traditionally consumes 8-16 weeks of cross-functional effort. The process involves medical directors, biostatisticians, regulatory affairs specialists, and operations teams iterating through multiple draft versions. Each protocol revision cycle risks introducing inconsistencies and extends the time to first-patient-in by weeks or months.</p>
-<p>Protocol amendments after study initiation are even more costly — the Tufts Center for the Study of Drug Development estimates that the average Phase III protocol undergoes 2.3 substantial amendments, each costing $450,000-$500,000 and adding 3-4 months to the timeline. Many amendments stem from design issues that could have been identified earlier with better analytical tools.</p>
-
-<h3>How Generative AI Transforms Protocol Design</h3>
-<p>Large language models fine-tuned on thousands of historical trial protocols, FDA and EMA guidance documents, ICH guidelines, and published clinical outcomes can now generate comprehensive protocol drafts that account for endpoint selection, sample size estimation, adaptive design elements, and regulatory expectations simultaneously. These models don't simply template-fill; they reason about therapeutic area-specific conventions, competitive landscape considerations, and known regulatory preferences.</p>
-<p>The GenAI workflow typically operates in three phases. First, the model generates a structured protocol draft from a target product profile and high-level design parameters. Second, an automated review layer checks the draft against regulatory guidelines, identifies potential issues (e.g., overly broad inclusion criteria, insufficient stratification factors, endpoint alignment problems), and suggests specific amendments. Third, the system generates a detailed rationale document explaining each design choice, accelerating the internal review process.</p>
-
-<h3>Practical Impact in Pharma</h3>
-<ul>
-<li>Protocol design cycle compressed from 12 weeks to 3 weeks for a Phase II oncology trial</li>
-<li>30% fewer protocol amendments post-submission, directly reducing cost and timeline variance</li>
-<li>Improved consistency across multi-regional trials through automated alignment with EMA, Swissmedic, and FDA requirements</li>
-<li>Automated generation of country-specific protocol addenda for EU member states</li>
-</ul>
-
-<blockquote>The value isn't just speed — it's quality. GenAI-assisted protocols show measurably better alignment with regulatory expectations because the model has internalized patterns from thousands of prior submissions and their outcomes.</blockquote>
-
-<h3>Governance and Validation</h3>
-<p>Despite the powerful capabilities, human oversight remains essential. Every GenAI-generated protocol undergoes medical review by qualified investigators. The AI serves as a first-draft engine and quality checker, not a decision-maker. Organizations implementing these tools need clear SOPs for AI-assisted authoring, including version control, change tracking, and accountability frameworks. For Swiss and EU sponsors, alignment with ICH E6(R3) good clinical practice guidelines is critical.</p>`},
-    de:{title:'GenAI zur Beschleunigung des Clinical-Trial-Protokolldesigns',desc:'Generative KI transformiert die Gestaltung adaptiver klinischer Studienprotokolle.',read:'9 Min.',date:'Feb. 2026',
-      content:`<h3>Der Engpass im Protokolldesign</h3>
-<p>Das Design klinischer Studienprotokolle ist eine kritische Aktivität, die traditionell 8-16 Wochen funktionsübergreifende Arbeit erfordert. Jeder Revisionszyklus riskiert Inkonsistenzen und verlängert die Zeit bis zum ersten Patienteneinschluss. Protokollamendments nach Studienbeginn sind noch kostspieliger — durchschnittlich 2,3 substanzielle Amendments pro Phase-III-Protokoll, jeweils 450.000-500.000 USD.</p>
-
-<h3>Wie Generative KI das Protokolldesign transformiert</h3>
-<p>Grosse Sprachmodelle, feinabgestimmt auf Tausende historischer Studienprotokolle, FDA- und EMA-Leitlinien und ICH-Richtlinien, können umfassende Protokollentwürfe generieren. Der GenAI-Workflow arbeitet in drei Phasen: Entwurfsgenerierung, automatisierte Prüfung gegen regulatorische Richtlinien, und Erstellung detaillierter Begründungsdokumente.</p>
-
-<h3>Praktische Auswirkungen</h3>
-<ul>
-<li>Protokolldesignzyklus von 12 auf 3 Wochen komprimiert</li>
-<li>30% weniger Amendments nach Einreichung</li>
-<li>Verbesserte Konsistenz bei multiregionalen Studien durch automatisierte Abstimmung mit EMA, Swissmedic und FDA</li>
-<li>Automatisierte Erstellung länderspezifischer Protokollergänzungen</li>
-</ul>
-
-<h3>Governance und Validierung</h3>
-<p>Trotz leistungsfähiger Fähigkeiten bleibt menschliche Aufsicht essenziell. Jedes GenAI-generierte Protokoll wird medizinisch von qualifizierten Prüfärzten überprüft. Für Schweizer und EU-Sponsoren ist die Ausrichtung auf ICH E6(R3) GCP-Richtlinien entscheidend.</p>`}
-  },
-  {id:3,cat:'rd',slug:'ml-biomarker-discovery-precision-medicine',
-    tags:['Biomarkers','Precision Medicine','Machine Learning','Diagnostics','IVDR','Immunotherapy','Multi-Omics','Companion Diagnostics'],
-    en:{title:'Machine Learning in Biomarker Discovery for Precision Medicine',desc:'Using ML to identify predictive and prognostic biomarkers from multi-omics datasets.',read:'10 min',date:'Jan 2026',
-      content:`<h3>Why Biomarker Discovery Matters</h3>
-<p>Precision medicine depends on robust biomarkers — measurable biological indicators that predict disease progression, treatment response, or safety signals. The challenge is finding reliable biomarker signatures in the noise of high-dimensional biological data. A single tumor biopsy can yield expression data for 20,000+ genes, millions of methylation sites, and thousands of proteins. Traditional statistical approaches, constrained by multiple testing corrections and linear assumptions, often fail to capture the complex, non-linear relationships that define biological systems.</p>
-<p>The commercial imperative is equally compelling: companion diagnostics tied to targeted therapies represent a $6+ billion market growing at 12% annually. Companies that identify and validate predictive biomarkers faster gain significant first-mover advantages in market access negotiations and clinical differentiation.</p>
-
-<h3>ML Approaches Reshaping Discovery</h3>
-<p>Modern ML approaches to biomarker discovery leverage the complementary strengths of multiple algorithm families. Random forests and gradient boosting methods provide robust feature importance rankings that identify which genes, proteins, or metabolites most strongly associate with clinical outcomes. Deep learning autoencoders compress high-dimensional data into latent representations that capture non-linear biological relationships invisible to linear methods. Ensemble meta-learners combine predictions from multiple models to improve generalization and reduce overfitting.</p>
-<p>A particularly powerful paradigm is multi-omics integration: rather than analyzing genomic, proteomic, and metabolomic data in isolation, ML models learn joint representations that capture cross-omic interactions. A gene mutation's clinical significance often depends on its proteomic consequences and metabolic context — relationships that single-omic analyses miss entirely.</p>
-
-<h3>Case Study: Immunotherapy Response Prediction</h3>
-<p>A mid-size Swiss diagnostics firm partnered with academic medical centers to develop an ML-based companion diagnostic for immunotherapy response in non-small cell lung cancer (NSCLC). The ML pipeline — combining elastic net regularization with gradient boosted trees — identified a 12-gene transcriptomic signature predictive of pembrolizumab response. The model was validated across three independent cohorts totaling 1,200 patients, achieving an AUC of 0.89 (compared to 0.71 for PD-L1 expression alone).</p>
-
-<h3>Regulatory Pathway</h3>
-<ul>
-<li>IVD Regulation (IVDR) compliance for EU market access, including clinical evidence requirements under Annex XIII</li>
-<li>Swissmedic alignment through mutual recognition agreements and parallel Swiss assessment pathways</li>
-<li>Model transparency documentation meeting FDA's expectations for AI/ML-based Software as a Medical Device (SaMD)</li>
-<li>Prospective clinical validation study design aligned with CLSI EP28-A3c guidelines</li>
-</ul>`},
-    de:{title:'Machine Learning in der Biomarker-Entdeckung für Präzisionsmedizin',desc:'ML zur Identifikation prädiktiver und prognostischer Biomarker aus Multi-Omics-Datensätzen.',read:'10 Min.',date:'Jan. 2026',
-      content:`<h3>Warum Biomarker-Entdeckung wichtig ist</h3>
-<p>Präzisionsmedizin hängt von robusten Biomarkern ab. Die Herausforderung liegt darin, zuverlässige Biomarker-Signaturen im Rauschen hochdimensionaler biologischer Daten zu finden. Eine einzelne Tumorbiopsie kann Expressionsdaten für über 20.000 Gene, Millionen von Methylierungsstellen und Tausende von Proteinen liefern. Companion Diagnostics für zielgerichtete Therapien stellen einen über 6 Milliarden Dollar schweren Markt dar.</p>
-
-<h3>ML-Ansätze in der Entdeckung</h3>
-<p>Moderne ML-Ansätze nutzen die komplementären Stärken mehrerer Algorithmenfamilien. Random Forests liefern robuste Feature-Importance-Rankings. Deep-Learning-Autoencoder komprimieren hochdimensionale Daten in latente Repräsentationen. Multi-Omics-Integration lernt gemeinsame Repräsentationen über genomische, proteomische und metabolomische Daten hinweg.</p>
-
-<h3>Fallstudie: Vorhersage des Immuntherapie-Ansprechens</h3>
-<p>Ein mittelgrosses Schweizer Diagnostikunternehmen identifizierte eine 12-Gen-Transkriptom-Signatur zur Vorhersage des Pembrolizumab-Ansprechens bei NSCLC. Das Modell wurde an drei unabhängigen Kohorten mit 1.200 Patienten validiert (AUC: 0,89 vs. 0,71 für PD-L1 allein).</p>
-
-<h3>Regulatorischer Pfad</h3>
-<ul>
-<li>IVD-Verordnung (IVDR) Konformität für EU-Marktzugang</li>
-<li>Swissmedic-Angleichung durch gegenseitige Anerkennungsvereinbarungen</li>
-<li>Modell-Transparenzdokumentation gemäss FDA-Erwartungen für KI/ML-basierte SaMD</li>
-</ul>`}
-  },
-  {id:4,cat:'rd',slug:'ai-molecular-simulation-small-molecule-design',
-    tags:['Molecular Simulation','Lead Optimization','ADMET','Physics-Informed AI','Drug Design','Computational Chemistry','Neural Networks'],
-    en:{title:'AI-Powered Molecular Simulation for Small Molecule Design',desc:'How physics-informed neural networks are reshaping lead optimization in early discovery.',read:'8 min',date:'Dec 2025',
-      content:`<h3>The Computational Bottleneck in Drug Design</h3>
-<p>Molecular dynamics simulations are essential for understanding how drug candidates interact with biological targets at the atomic level. However, traditional MD simulations are extraordinarily computationally expensive — a single protein-ligand binding free energy calculation can require days of supercomputer time. This creates a throughput bottleneck: medicinal chemistry teams can synthesize and test compounds faster than computational teams can simulate them.</p>
-<p>The result is an iterative cycle of design-make-test that typically requires 15-25 synthesis cycles to advance from hit to lead, each cycle consuming 2-4 weeks. Reducing the number of required cycles translates directly into months saved and millions in reduced costs.</p>
-
-<h3>Physics-Informed Neural Network Surrogates</h3>
-<p>AI surrogate models — physics-informed neural networks (PINNs) — are trained on the outputs of high-fidelity MD simulations to predict binding affinities, conformational flexibility, and ADMET properties in milliseconds rather than days. These models incorporate physical constraints (conservation laws, thermodynamic consistency) directly into their architecture, producing predictions that are both fast and physically plausible.</p>
-<p>The latest generation of equivariant neural networks (E(3)-equivariant architectures like SE(3)-Transformers) respect the rotational and translational symmetries of molecular systems, dramatically improving generalization to unseen chemical scaffolds. Combined with active learning strategies that intelligently select which compounds to simulate next, these systems continuously improve their predictive accuracy.</p>
-
-<h3>Impact on Lead Optimization</h3>
-<ul>
-<li>50% fewer synthesis-test cycles required to advance from hit to lead candidate</li>
-<li>3x faster lead optimization compared to traditional computational chemistry workflows</li>
-<li>Multi-parameter optimization: models simultaneously predict solubility, metabolic stability, hERG liability, and binding affinity</li>
-<li>Seamless integration with electronic lab notebooks and existing compound management systems</li>
-</ul>
-
-<blockquote>Physics-informed AI doesn't replace physics — it accelerates it. By learning the underlying physical relationships from simulation data, these models provide near-instant approximations that guide experimental decisions, with full MD simulations reserved for final validation of top candidates.</blockquote>`},
-    de:{title:'KI-gestützte Molekülsimulation für das Design kleiner Moleküle',desc:'Wie physik-informierte neuronale Netze die Lead-Optimierung in der frühen Entdeckung verändern.',read:'8 Min.',date:'Dez. 2025',
-      content:`<h3>Der Rechenengpass im Wirkstoffdesign</h3>
-<p>Molekulardynamik-Simulationen sind essenziell für das Verständnis der Interaktion von Wirkstoffkandidaten mit biologischen Targets. Traditionelle MD-Simulationen sind jedoch rechenintensiv — eine einzelne Berechnung kann Tage benötigen. Der typische Design-Make-Test-Zyklus erfordert 15-25 Synthesezyklen, jeweils 2-4 Wochen.</p>
-
-<h3>Physik-informierte neuronale Netzwerk-Surrogate</h3>
-<p>KI-Surrogat-Modelle — Physics-Informed Neural Networks (PINNs) — werden auf den Outputs hochauflösender MD-Simulationen trainiert und sagen Bindungsaffinitäten und ADMET-Eigenschaften in Millisekunden voraus. Äquivariante neuronale Netzwerke respektieren die Symmetrien molekularer Systeme und verbessern die Generalisierung dramatisch.</p>
-
-<h3>Auswirkungen auf die Lead-Optimierung</h3>
-<ul>
-<li>50% weniger Synthese-Test-Zyklen</li>
-<li>3x schnellere Lead-Optimierung</li>
-<li>Multi-Parameter-Optimierung: simultane Vorhersage von Löslichkeit, metabolischer Stabilität und Bindungsaffinität</li>
-<li>Nahtlose Integration mit elektronischen Labornotizbüchern</li>
-</ul>`}
-  },
-  {id:5,cat:'rd',slug:'real-world-evidence-nlp-health-data',
-    tags:['Real-World Evidence','NLP','EHR','GDPR','Data Privacy','Transformer Models','De-identification','Pharmacovigilance'],
-    en:{title:'Real-World Evidence Generation with NLP and Health Data',desc:'Extracting structured insights from unstructured clinical notes using NLP pipelines.',read:'9 min',date:'Nov 2025',
-      content:`<h3>The Unstructured Data Challenge</h3>
-<p>Electronic health records contain vast quantities of unstructured text — physician notes, radiology reports, pathology findings, discharge summaries, and nursing assessments. An estimated 80% of clinically relevant information exists only in free-text form, locked away from structured analytics. Extracting analysis-ready data from these sources has traditionally required expensive, slow manual chart review by trained clinical abstractors.</p>
-<p>For pharmaceutical companies, this unstructured data represents an untapped goldmine of real-world evidence (RWE) that could inform label expansion strategies, post-marketing surveillance, comparative effectiveness research, and health economics outcomes research (HEOR).</p>
-
-<h3>NLP Pipeline Architecture</h3>
-<p>Modern NLP pipelines for clinical text processing combine multiple specialized components. Named Entity Recognition (NER) models identify mentions of drugs, diseases, symptoms, procedures, and lab values. Relation Extraction models determine the relationships between entities (e.g., "Drug X treats Condition Y" vs. "Drug X was discontinued due to Adverse Event Z"). Temporal reasoning modules establish the chronological sequence of clinical events, enabling longitudinal patient journey reconstruction.</p>
-<p>The latest generation of these systems builds on transformer architectures fine-tuned on clinical corpora — models like ClinicalBERT, BioMedBERT, and domain-adapted GPT variants that understand medical terminology, abbreviations, and contextual nuances specific to clinical documentation.</p>
-
-<h3>Results and Validation</h3>
-<ul>
-<li>90%+ extraction accuracy for key clinical variables including treatment responses, adverse events, and comorbidities</li>
-<li>10x faster data processing compared to manual chart review, enabling studies that were previously infeasible at scale</li>
-<li>GDPR and Swiss Federal Act on Data Protection (nDSG) compliance through multi-layer de-identification including named entity masking, date shifting, and rare disease suppression</li>
-<li>Successful deployment across three EU languages (English, German, French) with language-specific model variants</li>
-</ul>
-
-<h3>Privacy-First Design</h3>
-<p>In the EU and Swiss regulatory environment, processing health data demands rigorous data protection measures. Our NLP pipelines implement privacy by design: de-identification occurs at the point of data ingestion, before any analytical processing begins. All processing occurs within data custodian environments — no patient-level data leaves the hospital infrastructure. Aggregated, anonymized outputs are the only data that flows to the analytical consumer.</p>`},
-    de:{title:'Real-World-Evidence-Generierung mit NLP und Gesundheitsdaten',desc:'Extraktion strukturierter Erkenntnisse aus unstrukturierten klinischen Notizen mittels NLP.',read:'9 Min.',date:'Nov. 2025',
-      content:`<h3>Die Herausforderung unstrukturierter Daten</h3>
-<p>Elektronische Gesundheitsakten enthalten riesige Mengen unstrukturierten Textes. Geschätzt 80% der klinisch relevanten Informationen existieren nur in Freitextform. Für Pharmaunternehmen stellen diese Daten eine ungenutzte Goldmine an Real-World-Evidence dar.</p>
-
-<h3>NLP-Pipeline-Architektur</h3>
-<p>Moderne NLP-Pipelines kombinieren Named Entity Recognition, Relation Extraction und temporale Schlussfolgerung. Transformer-Architekturen, feinabgestimmt auf klinische Korpora, verstehen medizinische Terminologie und kontextuelle Nuancen. Erfolgreicher Einsatz in drei EU-Sprachen (Englisch, Deutsch, Französisch).</p>
-
-<h3>Ergebnisse</h3>
-<ul>
-<li>90%+ Extraktionsgenauigkeit für klinische Schlüsselvariablen</li>
-<li>10x schnellere Datenverarbeitung vs. manuelle Überprüfung</li>
-<li>DSGVO- und Schweizer nDSG-Konformität durch mehrstufige De-Identifikation</li>
-</ul>
-
-<h3>Privacy-First-Design</h3>
-<p>Unsere NLP-Pipelines implementieren Datenschutz by Design: De-Identifikation erfolgt am Punkt der Datenaufnahme. Alle Verarbeitungen finden innerhalb der Datenverwahrer-Umgebungen statt — keine Patientendaten verlassen die Krankenhausinfrastruktur.</p>`}
-  },
-  {id:6,cat:'rd',slug:'federated-learning-multi-site-clinical-data',
-    tags:['Federated Learning','Data Privacy','GDPR','nDSG','Multi-Site Studies','Hospital Networks','Privacy-Preserving AI','Clinical Research'],
-    en:{title:'Federated Learning for Multi-Site Clinical Data Analysis',desc:'Enabling collaborative ML across hospital sites without sharing patient-level data.',read:'9 min',date:'Oct 2025',
-      content:`<h3>The Data Dilemma in Multi-Site Research</h3>
-<p>Clinical research achieves statistical power through large, diverse patient populations — but data privacy regulations (GDPR, Swiss nDSG) and institutional data governance policies increasingly restrict the movement of patient-level data across organizational and national boundaries. The traditional approach of centralizing data in a single repository faces mounting legal, ethical, and practical barriers.</p>
-<p>This creates a paradox: the studies with the greatest potential to improve patient outcomes require data from multiple institutions, yet the regulatory framework designed to protect patients makes data pooling increasingly difficult.</p>
-
-<h3>Federated Learning Architecture</h3>
-<p>Federated learning resolves this paradox by bringing the algorithm to the data, rather than the data to the algorithm. A central coordination server distributes a model architecture to participating hospital sites. Each site trains the model on its local data and sends only the model updates (gradients or weight differentials) back to the coordinator. The coordinator aggregates these updates to produce an improved global model, which is then redistributed for the next training round. Raw patient data never leaves any participating institution.</p>
-<p>Advanced variants include differential privacy (adding calibrated noise to gradients to prevent patient re-identification) and secure aggregation (cryptographic protocols ensuring that the coordinator cannot inspect individual site contributions).</p>
-
-<h3>Implementation: Post-Surgical Complication Prediction</h3>
-<p>A federated learning network was deployed across 6 EU university hospitals to develop a predictive model for post-surgical complications in colorectal cancer patients. The training dataset — never centralized — comprised 14,000+ patient records across Germany, Switzerland, France, and the Netherlands.</p>
-<ul>
-<li>AUC of 0.87 for predicting major post-surgical complications within 30 days, matching centralized model performance</li>
-<li>Full compliance with GDPR, Swiss nDSG, and all six local institutional ethics committees</li>
-<li>No patient-level data crossed institutional or national boundaries at any point</li>
-<li>Each hospital retained full sovereignty over its data while contributing to collective intelligence</li>
-</ul>
-
-<blockquote>Federated learning represents a paradigm shift: we no longer need to choose between data privacy and scientific progress. Both can be achieved simultaneously through thoughtful technical architecture and governance frameworks.</blockquote>`},
-    de:{title:'Föderiertes Lernen für standortübergreifende klinische Datenanalyse',desc:'Kollaboratives ML über Krankenhausstandorte hinweg ohne Austausch von Patientendaten.',read:'9 Min.',date:'Okt. 2025',
-      content:`<h3>Das Datendilemma in der multizentrischen Forschung</h3>
-<p>Klinische Forschung erreicht statistische Aussagekraft durch grosse, diverse Patientenpopulationen — aber Datenschutzvorschriften beschränken zunehmend die Bewegung patientenbezogener Daten über organisatorische und nationale Grenzen hinweg.</p>
-
-<h3>Föderiertes Lernen löst das Paradox</h3>
-<p>Föderiertes Lernen bringt den Algorithmus zu den Daten, nicht umgekehrt. Ein zentraler Koordinationsserver verteilt eine Modellarchitektur an teilnehmende Standorte. Jeder Standort trainiert lokal und sendet nur Modellaktualisierungen zurück. Rohe Patientendaten verlassen nie eine teilnehmende Institution.</p>
-
-<h3>Implementierung: Prädiktionsmodell an 6 EU-Kliniken</h3>
-<ul>
-<li>AUC von 0,87 für die Vorhersage postoperativer Komplikationen, gleichwertig mit zentralisierter Modellleistung</li>
-<li>Volle DSGVO- und nDSG-Konformität an allen sechs Standorten</li>
-<li>Keine Patientendaten überquerten institutionelle oder nationale Grenzen</li>
-<li>Jedes Krankenhaus behielt volle Datensouveränität</li>
-</ul>`}
-  },
-  {id:7,cat:'rd',slug:'computer-vision-automated-pathology',
-    tags:['Computer Vision','Digital Pathology','CNN','CE-IVD','Histopathology','Deep Learning','Tumor Grading','Second Reader'],
-    en:{title:'Computer Vision for Automated Pathology Slide Analysis',desc:'Deep learning models augmenting pathologist workflows in tissue diagnostics.',read:'8 min',date:'Sep 2025',
-      content:`<h3>The Digital Pathology Revolution</h3>
-<p>Digital pathology has transformed how tissue samples are analyzed by converting glass slides into high-resolution digital images — whole-slide images (WSIs) that can contain billions of pixels. While digitization enables remote access and archival, the sheer volume of data overwhelms manual analysis. A busy pathology department may generate thousands of WSIs daily, each requiring careful examination for diagnostic features.</p>
-<p>Computer vision models based on deep learning can process these massive images systematically, identifying and quantifying cellular features at a scale and consistency impossible for human observers working alone.</p>
-
-<h3>Technical Approach</h3>
-<p>Modern pathology AI systems use multi-scale convolutional neural networks that process WSIs at multiple magnification levels — low magnification for tissue architecture, high magnification for cellular detail. Attention mechanisms help the model focus on diagnostically relevant regions. Models are trained on expert-annotated datasets containing thousands of slides with pixel-level annotations for features including tumor boundaries, mitotic figures, necrotic regions, and immune cell infiltrates.</p>
-<p>These systems serve as "second reader" tools: they highlight regions of interest, provide quantitative measurements (mitotic count, Ki-67 index, PD-L1 scoring), and flag discrepancies for pathologist review. The pathologist remains the final decision-maker, but their workflow becomes more efficient and consistent.</p>
-
-<h3>Validated Outcomes</h3>
-<ul>
-<li>95% concordance with expert pathologists across three tumor types (breast, lung, colorectal)</li>
-<li>40% reduction in average slide review time while maintaining diagnostic accuracy</li>
-<li>Significant improvement in inter-observer consistency for subjective scoring tasks (e.g., tumor grading)</li>
-<li>CE-IVD marking pathway for EU deployment under the new IVDR framework</li>
-</ul>
-
-<h3>Deployment Considerations</h3>
-<p>Successful deployment in hospital pathology departments requires integration with existing laboratory information systems (LIS), PACS infrastructure, and pathologist reporting tools. Data governance, model versioning, and continuous performance monitoring are essential for maintaining regulatory compliance in the EU and Swiss markets.</p>`},
-    de:{title:'Computer Vision für automatisierte Pathologie-Schnittanalyse',desc:'Deep-Learning-Modelle zur Unterstützung pathologischer Workflows in der Gewebediagnostik.',read:'8 Min.',date:'Sep. 2025',
-      content:`<h3>Die Revolution der digitalen Pathologie</h3>
-<p>Digitale Pathologie hat die Gewebeanalyse transformiert. Computer-Vision-Modelle können massive Ganzkörper-Schnittbilder systematisch verarbeiten und zelluläre Merkmale mit einer Konsistenz identifizieren, die für menschliche Beobachter allein unmöglich wäre.</p>
-
-<h3>Technischer Ansatz</h3>
-<p>Multi-Skalen-CNNs verarbeiten WSIs auf mehreren Vergrösserungsstufen. Aufmerksamkeitsmechanismen fokussieren auf diagnostisch relevante Regionen. Die Systeme dienen als «Second Reader» — sie markieren Bereiche von Interesse und liefern quantitative Messungen.</p>
-
-<h3>Validierte Ergebnisse</h3>
-<ul>
-<li>95% Übereinstimmung mit Experten-Pathologen über drei Tumortypen</li>
-<li>40% Reduktion der durchschnittlichen Slide-Durchsichtzeit</li>
-<li>Signifikante Verbesserung der Inter-Observer-Konsistenz</li>
-<li>CE-IVD-Markierungsweg für EU-Einsatz unter dem neuen IVDR-Rahmen</li>
-</ul>`}
-  },
-  // --- AI for Commercial (7) ---
-  {id:8,cat:'com',slug:'genai-personalized-hcp-engagement',
-    tags:['HCP Engagement','Generative AI','CRM','Omnichannel','MLR Review','Content Generation','Personalization','EFPIA'],
-    en:{title:'GenAI-Powered Personalized HCP Engagement',desc:'How generative AI enables hyper-personalized content for healthcare professional outreach.',read:'8 min',date:'Mar 2026',
-      content:`<h3>Beyond One-Size-Fits-All Communication</h3>
-<p>The era of standardized HCP detailing is ending. Healthcare professionals increasingly expect communications that are relevant to their specialty, patient population, and clinical interests. Yet traditional content creation processes — involving medical writers, MLR review cycles, and channel-specific adaptation — cannot produce personalized content at the scale modern omnichannel strategies demand.</p>
-<p>GenAI changes this equation fundamentally. Large language models integrated with CRM data and approved medical content repositories can generate compliant, personalized messaging variants for thousands of individual HCPs — each tailored to their prescribing patterns, therapeutic interests, and preferred communication channels.</p>
-
-<h3>Architecture and Guardrails</h3>
-<p>The system architecture connects a GenAI engine to three critical data sources: the company's approved content library (medical claims, clinical data summaries, product information), CRM-derived HCP profiles (specialty, prescribing history, engagement preferences), and regulatory guardrails (SmPC-aligned claim boundaries, local pharmaceutical code requirements, channel-specific restrictions). Every generated message is automatically checked against these guardrails before entering the MLR review workflow.</p>
-
-<h3>Measurable Commercial Impact</h3>
-<ul>
-<li>45% increase in HCP engagement rates (measured by content interaction, reply rates, and meeting requests)</li>
-<li>60% reduction in content creation cycle times, from weeks to days</li>
-<li>Full compliance with EFPIA, Swiss pharmaceutical advertising regulations, and local pharma codes of practice</li>
-<li>Automated adaptation for multi-market deployment across CH, DE, AT, and FR</li>
-</ul>
-
-<blockquote>The magic isn't that AI writes faster — it's that AI enables a level of relevance that was previously impossible. When an oncologist receives a message specifically addressing the clinical question they raised at a recent congress, engagement follows naturally.</blockquote>`},
-    de:{title:'GenAI-gestützte personalisierte HCP-Ansprache',desc:'Wie generative KI hyperpersonalisierte Inhalte für die Ansprache von Healthcare-Fachleuten ermöglicht.',read:'8 Min.',date:'Mär. 2026',
-      content:`<h3>Jenseits der Einheitskommunikation</h3>
-<p>Die Ära des standardisierten HCP-Detailings endet. GenAI, integriert mit CRM-Daten und genehmigten medizinischen Inhaltsrepositorien, kann konforme, personalisierte Nachrichtenvarianten für Tausende individueller HCPs generieren — jeweils zugeschnitten auf Verschreibungsmuster, therapeutische Interessen und bevorzugte Kommunikationskanäle.</p>
-
-<h3>Architektur und Leitplanken</h3>
-<p>Die Systemarchitektur verbindet eine GenAI-Engine mit genehmigter Inhaltsbibliothek, CRM-abgeleiteten HCP-Profilen und regulatorischen Leitplanken. Jede generierte Nachricht wird automatisch gegen diese Leitplanken geprüft.</p>
-
-<h3>Messbare kommerzielle Wirkung</h3>
-<ul>
-<li>45% Steigerung der HCP-Engagement-Raten</li>
-<li>60% Reduktion der Content-Erstellungszyklen</li>
-<li>Volle EFPIA- und Schweizer Pharma-Werbevorschriften-Konformität</li>
-<li>Automatisierte Anpassung für Multi-Markt-Deployment</li>
-</ul>`}
-  },
-
-  {id:9,cat:'com',slug:'predictive-analytics-pharma-market-access',
-    tags:['Market Access','Predictive Analytics','HTA','Pricing Strategy','Payer','Reimbursement','BAG','EU Market'],
-    en:{title:'Predictive Analytics for Pharmaceutical Market Access',desc:'ML models forecasting payer decisions and optimizing pricing strategies across EU markets.',read:'9 min',date:'Feb 2026',
-      content:`<h3>The Market Access Challenge in Europe</h3><p>Market access in fragmented EU markets requires anticipating payer behavior across 27+ countries, each with distinct HTA processes, pricing regulations, and reimbursement criteria. The Swiss BAG process adds another dimension for companies headquartered in or launching from Switzerland. A pricing misstep in one reference pricing country can cascade across the entire EU, costing hundreds of millions in revenue.</p><h3>AI-Powered Forecasting</h3><p>Predictive models trained on 15 years of historical HTA decisions, epidemiological data, competitive landscapes, and economic indicators forecast approval probabilities and optimal price points per market. NLP extracts insights from published HTA reports, identifying emerging decision patterns and committee preferences. Bayesian updating allows models to refine predictions as new data becomes available — such as competitor pricing moves or updated clinical evidence.</p><h3>Strategic Value</h3><ul><li>85% accuracy in predicting HTA outcomes across major EU markets</li><li>Optimized launch sequencing that maximizes reference pricing advantages</li><li>Data-driven pricing dossiers for Swiss BAG submissions and EU payer negotiations</li><li>Scenario modeling for different pricing strategies and their cross-market implications</li></ul><blockquote>The difference between a well-sequenced EU launch and a poorly sequenced one can be worth €200M+ in cumulative revenue over the product lifecycle. Predictive analytics transforms this from intuition-based to data-driven decision-making.</blockquote>`},
-    de:{title:'Predictive Analytics für pharmazeutischen Marktzugang',desc:'ML-Modelle zur Vorhersage von Kostenträger-Entscheidungen und Optimierung von Preisstrategien.',read:'9 Min.',date:'Feb. 2026',
-      content:`<h3>Die Marktzugangsherausforderung in Europa</h3><p>Marktzugang in fragmentierten EU-Märkten erfordert die Antizipation des Kostenträgerverhaltens in über 27 Ländern. Prädiktive Modelle, trainiert auf 15 Jahren historischer HTA-Entscheidungen, prognostizieren Genehmigungswahrscheinlichkeiten und optimale Preispunkte pro Markt.</p><h3>Strategischer Mehrwert</h3><ul><li>85% Genauigkeit bei HTA-Vorhersagen</li><li>Optimierte Launch-Sequenzierung</li><li>Datengestützte Preisdossiers für BAG und EU-Kostenträger</li></ul>`}
-  },
-  {id:10,cat:'com',slug:'ai-omnichannel-orchestration-pharma',
-    tags:['Omnichannel','Reinforcement Learning','Channel Optimization','Pharma Commercial','HCP','Digital Marketing','CRM'],
-    en:{title:'AI-Driven Omnichannel Orchestration in Pharma',desc:'Intelligent orchestration of rep visits, email, webinars, and digital channels for maximum impact.',read:'7 min',date:'Jan 2026',
-      content:`<h3>The Channel Complexity Problem</h3><p>Pharma commercial teams manage an expanding array of channels: field force visits, approved emails, remote detailing, medical webinars, congress engagement, digital advertising, and peer-to-peer platforms. Without intelligent orchestration, HCPs receive fragmented, poorly timed, sometimes redundant communications that erode brand perception and drive opt-outs.</p><h3>Reinforcement Learning Approach</h3><p>Reinforcement learning (RL) models optimize the sequence, timing, and channel mix for each HCP based on their historical engagement data, predicted responsiveness, and current stage in the adoption journey. Unlike rule-based engines, RL models learn continuously from interaction outcomes, discovering non-obvious patterns — for example, that certain HCPs respond best to a webinar invitation 48 hours after an approved email, while others prefer field visits preceded by a relevant medical publication share.</p><h3>Results</h3><ul><li>35% improvement in message recall among target HCPs</li><li>28% reduction in channel fatigue and opt-out rates</li><li>Unified engagement analytics across all touchpoints</li><li>Automated compliance with channel-specific regulatory requirements per market</li></ul>`},
-    de:{title:'KI-gesteuerte Omnichannel-Orchestrierung in der Pharmabranche',desc:'Intelligente Orchestrierung von Aussendienstbesuchen, E-Mail, Webinaren und digitalen Kanälen.',read:'7 Min.',date:'Jan. 2026',
-      content:`<h3>Das Kanalkomplexitätsproblem</h3><p>Reinforcement-Learning-Modelle optimieren Sequenz, Timing und Kanalmix für jeden HCP basierend auf Engagement-Historie und vorhergesagter Responsivität. RL-Modelle lernen kontinuierlich aus Interaktionsergebnissen.</p><h3>Ergebnisse</h3><ul><li>35% Verbesserung der Nachrichtenerinnerung</li><li>28% Reduktion der Opt-out-Raten</li><li>Einheitliche Engagement-Analytik über alle Touchpoints</li></ul>`}
-  },
-  {id:11,cat:'com',slug:'nlp-competitive-intelligence-launch-readiness',
-    tags:['Competitive Intelligence','NLP','Launch Readiness','Pipeline Monitoring','ClinicalTrials.gov','Pharma Strategy','Real-Time Analytics'],
-    en:{title:'NLP-Based Competitive Intelligence for Launch Readiness',desc:'Automated monitoring and analysis of competitor pipelines, publications, and market signals.',read:'7 min',date:'Dec 2025',
-      content:`<h3>The Intelligence Gap</h3><p>Pre-launch commercial teams need real-time competitive intelligence to shape positioning, messaging, and market access strategies. Manual monitoring of ClinicalTrials.gov, PubMed, patent filings, regulatory filings, and press releases is slow, incomplete, and subject to analyst bias. Critical signals — a competitor's breakthrough trial result, an unexpected label change, a pricing move in a key reference market — can be missed or detected too late.</p><h3>Automated CI Pipeline</h3><p>NLP pipelines continuously ingest and analyze competitor data from dozens of structured and unstructured sources. Entity extraction identifies drug names, indications, and clinical endpoints. Sentiment analysis detects shifts in KOL opinion. Change detection algorithms flag material updates — new trial registrations, protocol amendments, regulatory submissions. All signals are consolidated into a unified competitive intelligence dashboard with configurable alert thresholds.</p><h3>Impact</h3><ul><li>Real-time competitive dashboards with automated daily updates</li><li>80% reduction in analyst hours for CI report preparation</li><li>Early detection of competitive threats: average 6-week lead time over manual monitoring</li><li>Faster, evidence-based commercial strategy decisions</li></ul>`},
-    de:{title:'NLP-basierte Competitive Intelligence für die Markteinführungsbereitschaft',desc:'Automatisierte Überwachung und Analyse von Wettbewerber-Pipelines und Marktsignalen.',read:'7 Min.',date:'Dez. 2025',
-      content:`<h3>Die Intelligenzlücke</h3><p>NLP-Pipelines analysieren kontinuierlich Wettbewerberdaten aus Dutzenden von Quellen. Alle Signale werden in einem einheitlichen CI-Dashboard konsolidiert.</p><h3>Ergebnisse</h3><ul><li>Echtzeit-Wettbewerbs-Dashboards</li><li>80% weniger Analysestunden</li><li>6 Wochen Vorsprung gegenüber manuellem Monitoring</li></ul>`}
-  },
-  {id:12,cat:'com',slug:'ai-medical-affairs-automated-responses',
-    tags:['Medical Affairs','Medical Information','GenAI','Compliance','Audit Trail','SmPC','Regulatory','Automation'],
-    en:{title:'AI for Medical Affairs: Automated Medical Information Responses',desc:'GenAI streamlining medical information queries while maintaining scientific accuracy.',read:'7 min',date:'Nov 2025',
-      content:`<h3>The Medical Information Challenge</h3><p>Medical Information departments are the scientific voice of pharmaceutical companies, handling thousands of inquiries annually from HCPs, patients, and regulatory authorities. Each response must be scientifically accurate, reference-supported, and compliant with local regulations — a labor-intensive process requiring deep medical expertise. Average response times of 48-72 hours are common, despite HCPs expecting faster turnaround.</p><h3>GenAI-Assisted Response Generation</h3><p>A GenAI system connected to the company's approved content library — standard response letters (SRLs), SmPC/PI documents, clinical study reports, and published literature — can draft responses to routine inquiries in minutes. The system matches incoming queries to existing content, generates a synthesized response, and routes it for appropriate review. Complex or novel queries are automatically escalated to medical professionals.</p><h3>Governance Framework</h3><p>Every AI-generated response undergoes automated compliance checks against approved labels, SmPCs, and medical-legal guidelines before entering the review queue. The system maintains a complete audit trail: query classification, content sources used, generation rationale, reviewer identity, and final approval timestamp. This enables full traceability for regulatory inspections.</p><h3>Benefits</h3><ul><li>70% of routine queries handled with minimal human intervention</li><li>Average response time reduced from 48 hours to 4 hours</li><li>100% traceability and audit trail for regulatory compliance</li><li>Medical professionals freed to focus on complex, high-value inquiries</li></ul>`},
-    de:{title:'KI für Medical Affairs: Automatisierte Medical-Information-Antworten',desc:'GenAI zur Optimierung medizinischer Informationsanfragen bei Wahrung wissenschaftlicher Genauigkeit.',read:'7 Min.',date:'Nov. 2025',
-      content:`<h3>Die Herausforderung</h3><p>Medical-Information-Abteilungen bearbeiten Tausende Anfragen jährlich. Jede Antwort muss wissenschaftlich korrekt und regelkonform sein. Ein GenAI-System, verbunden mit genehmigten Inhaltsbibliotheken, kann Routineantworten in Minuten entwerfen.</p><h3>Vorteile</h3><ul><li>70% der Routineanfragen autonom bearbeitet</li><li>Antwortzeit von 48h auf 4h reduziert</li><li>100% Nachverfolgbarkeit für regulatorische Compliance</li></ul>`}
-  },
-  {id:13,cat:'com',slug:'patient-journey-mapping-ai-real-world-data',
-    tags:['Patient Journey','Real-World Data','LSTM','Clustering','Rare Disease','Diagnostic Delay','Disease Awareness','HEOR'],
-    en:{title:'Patient Journey Mapping with AI and Real-World Data',desc:'Uncovering unmet needs and drop-off points across the patient treatment pathway.',read:'8 min',date:'Oct 2025',
-      content:`<h3>Understanding the Full Patient Journey</h3><p>From symptom onset through diagnosis, treatment selection, adherence, and long-term outcomes — the patient journey contains critical inflection points that determine clinical and commercial success. Traditional patient journey research relies on small-sample qualitative interviews that capture perceptions but not population-level patterns. AI applied to real-world data — claims databases, EMR systems, patient registries, and patient-reported outcomes — reveals quantitative journey patterns at unprecedented scale.</p><h3>AI Methodology</h3><p>Sequence models (LSTMs, Transformers) trained on longitudinal patient records identify typical and atypical journey archetypes. Clustering algorithms segment patient populations by journey pattern, revealing distinct subgroups with different diagnostic pathways, treatment sequences, and outcome trajectories. Survival analysis models quantify the impact of journey delays on clinical outcomes.</p><h3>Insights Delivered</h3><ul><li>Identified a 9-month average diagnostic delay in a rare disease cohort — 4 months longer than previously estimated from interview-based research</li><li>Pinpointed specific referral bottlenecks between primary care and specialist centers across 5 EU countries</li><li>Quantified the clinical impact of delayed diagnosis: patients diagnosed within 3 months had 2.4x better treatment outcomes</li><li>Informed disease awareness campaign targeting and budget allocation for EU market launches</li></ul>`},
-    de:{title:'Patient Journey Mapping mit KI und Real-World-Daten',desc:'Aufdeckung unerfüllter Bedürfnisse und Abbruchpunkte entlang des Behandlungspfades.',read:'8 Min.',date:'Okt. 2025',
-      content:`<h3>Die vollständige Patientenreise verstehen</h3><p>KI, angewandt auf Real-World-Daten, deckt quantitative Reisemuster in beispiellosem Massstab auf. Sequenzmodelle identifizieren typische und atypische Journey-Archetypen. Clustering segmentiert Patientenpopulationen nach Reisemuster.</p><h3>Erkenntnisse</h3><ul><li>9-monatige Diagnoseverzögerung bei seltenen Erkrankungen — 4 Monate länger als zuvor geschätzt</li><li>Spezifische Überweisungsengpässe in 5 EU-Ländern identifiziert</li><li>Patienten mit schneller Diagnose hatten 2,4x bessere Behandlungsergebnisse</li></ul>`}
-  },
-  {id:14,cat:'com',slug:'ai-enhanced-key-account-management-pharma',
-    tags:['Key Account Management','Sales Enablement','CRM Analytics','NLP','Formulary','Strategic Accounts','Field Force'],
-    en:{title:'AI-Enhanced Key Account Management in Pharma',desc:'Intelligent insights for field teams managing strategic hospital and payer accounts.',read:'7 min',date:'Sep 2025',
-      content:`<h3>The KAM Complexity Challenge</h3><p>Key Account Managers in pharma must synthesize vast, heterogeneous information for each strategic account: formulary status across product lines, treatment protocol adherence patterns, stakeholder mapping (prescribers, pharmacists, procurement, medical directors), contract terms and renewal timelines, competitive activity, and clinical opinion leader relationships. Most KAMs spend 30-40% of their time on data gathering rather than strategic engagement.</p><h3>AI-Powered Account Intelligence</h3><p>AI dashboards aggregate and analyze account data from CRM, claims databases, published hospital data, and public procurement records. NLP summarizes relevant committee meeting minutes, published formulary decisions, and clinical publications specific to each account's therapeutic focus. Predictive models identify accounts at risk of formulary removal or competitive switch, enabling proactive intervention.</p><h3>Impact</h3><ul><li>KAMs save 8+ hours per week on data gathering and report preparation</li><li>20% improvement in account growth targets through data-informed engagement strategies</li><li>Early warning system for formulary threats with 3-month advance detection</li><li>Better-informed, more strategic customer interactions that HCPs value</li></ul>`},
-    de:{title:'KI-gestütztes Key Account Management in der Pharmabranche',desc:'Intelligente Insights für Aussendienstteams bei der Betreuung strategischer Kunden.',read:'7 Min.',date:'Sep. 2025',
-      content:`<h3>Die KAM-Komplexität</h3><p>KI-Dashboards aggregieren Kontodaten aus CRM, Abrechnungsdatenbanken und öffentlichen Beschaffungsdaten. NLP fasst relevante Ausschussprotokolle und Formulierungsentscheidungen zusammen. Prädiktive Modelle identifizieren gefährdete Konten.</p><h3>Ergebnisse</h3><ul><li>8+ Stunden pro Woche Zeitersparnis für KAMs</li><li>20% Verbesserung der Wachstumsziele</li><li>Frühwarnsystem mit 3 Monaten Vorlauf für Formulierungsbedrohungen</li></ul>`}
-  },
-  // --- AI for Core IT (6) ---
-  {id:15,cat:'it',slug:'ai-it-service-management-gxp',
-    tags:['ITSM','GxP','Incident Management','Machine Learning','Ticket Routing','Compliance','Audit Readiness','ServiceNow'],
-    en:{title:'AI-Powered IT Service Management for GxP Environments',desc:'Intelligent ticket routing, predictive incident management, and automated compliance in pharma IT.',read:'8 min',date:'Mar 2026',
-      content:`<h3>The GxP IT Service Challenge</h3><p>Pharma IT service desks handle thousands of tickets spanning GxP-critical systems (validated manufacturing, laboratory, clinical, and quality systems) and non-critical business applications. Misrouting or delayed resolution of GxP-impacting incidents creates direct compliance risk — a critical SAP batch record system outage handled with the urgency of a routine printer issue could trigger regulatory observations during an inspection.</p><p>Traditional ITSM tools rely on user self-classification, which is unreliable: studies show 30-40% of tickets are incorrectly categorized, leading to misrouting, priority misalignment, and delayed resolution.</p><h3>ML-Enhanced ITSM</h3><p>ML classifiers trained on historical ticket data automatically categorize incidents based on GxP impact assessment, affected system classification, and urgency indicators extracted from the ticket description via NLP. The model considers system validation status, data integrity implications, and regulatory reporting obligations when assigning priority. Predictive models forecast incident volume spikes based on change calendars, release schedules, and historical seasonal patterns, enabling proactive resource allocation.</p><h3>Outcomes</h3><ul><li>40% faster mean time to resolution for GxP-critical incidents</li><li>95% classification accuracy, reducing misrouting from 35% to under 5%</li><li>Automated compliance documentation: every GxP incident automatically generates audit-ready records including impact assessment, root cause, CAPA linkage, and resolution verification</li><li>Predictive capacity planning reducing overtime costs by 25%</li></ul>`},
-    de:{title:'KI-gestütztes IT Service Management für GxP-Umgebungen',desc:'Intelligentes Ticket-Routing, prädiktives Incident Management und automatisierte Compliance in der Pharma-IT.',read:'8 Min.',date:'Mär. 2026',
-      content:`<h3>Die GxP-IT-Service-Herausforderung</h3><p>ML-Klassifikatoren kategorisieren Incidents automatisch basierend auf GxP-Auswirkungsbewertung. Prädiktive Modelle prognostizieren Incident-Volumenspitzen basierend auf Change-Kalendern und historischen Mustern.</p><h3>Ergebnisse</h3><ul><li>40% schnellere Lösungszeit für GxP-kritische Incidents</li><li>95% Klassifikationsgenauigkeit (Fehlrouting von 35% auf unter 5%)</li><li>Automatisierte Audit-ready Compliance-Dokumentation</li><li>Prädiktive Kapazitätsplanung mit 25% weniger Überstundenkosten</li></ul>`}
-  },
-  {id:16,cat:'it',slug:'intelligent-data-integration-erp-lims-mes',
-    tags:['Data Integration','ERP','LIMS','MES','Master Data','SAP','Veeva','Entity Resolution','Data Quality'],
-    en:{title:'Intelligent Data Integration: Unifying ERP, LIMS, and MES with AI',desc:'ML-driven data harmonization across disparate Life Sciences IT systems.',read:'8 min',date:'Feb 2026',
-      content:`<h3>The Data Silo Problem</h3><p>Life Sciences companies typically operate complex, heterogeneous IT landscapes: SAP for ERP, Veeva for CRM and regulatory, LabWare or STARLIMS for laboratory operations, Siemens or Rockwell for manufacturing execution, Documentum or Veeva Vault for document management, and dozens of specialized applications for pharmacovigilance, clinical data management, and quality management. Each system maintains its own master data — materials, products, suppliers, customers — with inevitable inconsistencies.</p><p>These data silos create operational friction (manual reconciliation), compliance risk (inconsistent regulatory submissions), and decision-making blind spots (no single source of truth).</p><h3>AI-Powered Data Harmonization</h3><p>ML-based entity resolution algorithms identify records across systems that refer to the same real-world entity despite different naming conventions, codes, and hierarchies. AI detects and resolves conflicts — duplicate material records, inconsistent batch genealogies, misaligned organizational hierarchies — automatically, with human-in-the-loop review for ambiguous cases. Continuous learning ensures the system improves its matching accuracy over time.</p><h3>Benefits</h3><ul><li>90% reduction in manual data reconciliation effort across 6 enterprise systems</li><li>Single source of truth for regulatory submissions — eliminating data consistency findings in inspections</li><li>Real-time cross-system data quality dashboards with automated alerting</li><li>Foundation for advanced analytics and AI initiatives that require integrated, trustworthy data</li></ul>`},
-    de:{title:'Intelligente Datenintegration: Vereinheitlichung von ERP, LIMS und MES mit KI',desc:'ML-gesteuerte Datenharmonisierung über unterschiedliche Life-Sciences-IT-Systeme.',read:'8 Min.',date:'Feb. 2026',
-      content:`<h3>Das Datensilo-Problem</h3><p>ML-basierte Entity-Resolution-Algorithmen identifizieren Datensätze über Systeme hinweg, die sich trotz unterschiedlicher Namenskonventionen auf dieselbe reale Entität beziehen. KI erkennt und löst Konflikte automatisch.</p><h3>Vorteile</h3><ul><li>90% Reduktion des manuellen Datenabgleichsaufwands</li><li>Single Source of Truth für regulatorische Einreichungen</li><li>Echtzeit-Datenqualitäts-Dashboards</li></ul>`}
-  },
-  {id:17,cat:'it',slug:'cloud-migration-pharma-ai-risk-assessment',
-    tags:['Cloud Migration','AWS','Azure','GxP Validation','Risk Assessment','GAMP 5','Revalidation','Infrastructure'],
-    en:{title:'Cloud Migration for Pharma: AI-Assisted Planning and Risk Assessment',desc:'Using AI to de-risk cloud migration of validated systems in regulated environments.',read:'9 min',date:'Jan 2026',
-      content:`<h3>The Cloud Imperative</h3><p>Pharma companies face increasing pressure to migrate from on-premises infrastructure to cloud platforms (AWS, Azure, GCP) for scalability, cost optimization, and access to advanced services. However, migrating GxP-validated systems requires meticulous risk assessment, qualification planning, and revalidation — a process that traditional manual approaches handle slowly and inconsistently.</p><p>The stakes are high: an improperly migrated validated system could compromise data integrity, disrupt manufacturing operations, or trigger regulatory non-compliance findings. Yet the cost of maintaining aging on-premises infrastructure — including hardware refresh cycles, facility costs, and staffing — makes migration strategically essential.</p><h3>AI-Assisted Migration Planning</h3><p>ML models analyze system configurations, integration dependencies, validation documentation, and regulatory requirements to generate risk-scored migration plans. NLP extracts validation requirements from existing URS, FS, and DS documents, mapping them to cloud qualification protocols (IQ/OQ/PQ equivalents). The system identifies validation gaps that need to be addressed pre-migration and generates remediation recommendations.</p><h3>Results</h3><ul><li>60% reduction in migration planning time compared to traditional assessment approaches</li><li>Automated validation gap analysis identifying an average of 12 critical gaps per system that manual reviews missed</li><li>Risk-prioritized migration waves aligned with business criticality and regulatory exposure</li><li>Reusable qualification templates generated per cloud service pattern, reducing revalidation effort by 40%</li></ul>`},
-    de:{title:'Cloud-Migration für Pharma: KI-gestützte Planung und Risikobewertung',desc:'KI zur Risikominimierung bei der Cloud-Migration validierter Systeme in regulierten Umgebungen.',read:'9 Min.',date:'Jan. 2026',
-      content:`<h3>Der Cloud-Imperativ</h3><p>ML-Modelle analysieren Systemkonfigurationen und Validierungsdokumentation, um risikobewertete Migrationspläne zu erstellen. NLP extrahiert Validierungsanforderungen aus bestehender Dokumentation.</p><h3>Ergebnisse</h3><ul><li>60% Reduktion der Planungszeit</li><li>Automatisierte Validierungslückenanalyse</li><li>Risikoprioritierte Migrationswellen</li><li>40% weniger Revalidierungsaufwand durch wiederverwendbare Templates</li></ul>`}
-  },
-  {id:18,cat:'it',slug:'rpa-ai-pharma-back-office',
-    tags:['RPA','Intelligent Automation','Invoice Processing','Deviation Management','Batch Records','Quality Operations','Back-Office'],
-    en:{title:'Robotic Process Automation Enhanced with AI in Pharma Back-Office',desc:'Intelligent automation of repetitive processes across finance, procurement, and quality operations.',read:'7 min',date:'Dec 2025',
-      content:`<h3>The Automation Opportunity</h3><p>Pharma back-office processes — invoice processing, purchase order matching, deviation classification, batch record review, change control documentation — involve thousands of hours of repetitive, rule-based work annually. Traditional RPA handles the straightforward cases well but fails on exceptions: non-standard invoice formats, ambiguous deviation descriptions, incomplete batch records. These exceptions often represent 20-30% of total volume and consume a disproportionate share of human effort.</p><h3>AI-Enhanced RPA Architecture</h3><p>The solution combines traditional RPA bots for routine execution with ML models that handle exceptions intelligently. Computer vision models extract data from varied invoice formats and non-standard document layouts. NLP classifiers categorize deviations by type, severity, and root cause based on free-text descriptions. Anomaly detection models flag unusual patterns in batch records that merit quality review.</p><h3>Impact</h3><ul><li>75% reduction in manual processing time across finance and quality operations</li><li>99.5% accuracy in data extraction from structured and semi-structured documents</li><li>Deviation classification accuracy of 92%, with human review focused only on ambiguous cases</li><li>Faster deviation closure cycles, improving CAPA timeliness metrics</li></ul>`},
-    de:{title:'Robotic Process Automation mit KI im Pharma-Back-Office',desc:'Intelligente Automatisierung repetitiver Prozesse in Finanzen, Beschaffung und Qualitätsoperationen.',read:'7 Min.',date:'Dez. 2025',
-      content:`<h3>Die Automatisierungschance</h3><p>Die Lösung kombiniert traditionelle RPA-Bots mit ML-Modellen für Ausnahmebehandlung. Computer Vision extrahiert Daten aus variablen Dokumentformaten. NLP klassifiziert Abweichungen automatisch.</p><h3>Ergebnisse</h3><ul><li>75% Reduktion der manuellen Bearbeitungszeit</li><li>99,5% Extraktionsgenauigkeit</li><li>92% Abweichungsklassifikationsgenauigkeit</li></ul>`}
-  },
-  {id:19,cat:'it',slug:'ai-cybersecurity-life-sciences',
-    tags:['Cybersecurity','Threat Detection','SOC','NIS2','Anomaly Detection','Data Protection','IP Security','Insider Threats'],
-    en:{title:'AI-Driven Cybersecurity for Life Sciences Infrastructure',desc:'ML-based threat detection and response for protecting sensitive R&D and patient data.',read:'8 min',date:'Nov 2025',
-      content:`<h3>The Threat Landscape</h3><p>Life Sciences companies are high-value targets for sophisticated cyber threat actors. Intellectual property (compound libraries, clinical data, manufacturing processes), patient data (clinical trial records, real-world data assets), and operational technology (manufacturing control systems, laboratory automation) all represent valuable targets. The average cost of a data breach in the pharmaceutical industry exceeds $5 million, not including regulatory penalties and reputational damage.</p><p>Traditional signature-based security tools detect known threats but miss novel attack vectors, insider threats, and sophisticated persistent threats (APTs) that characterize state-sponsored industrial espionage targeting pharma R&D.</p><h3>AI-Powered Security Operations</h3><p>ML-based SOCs analyze network traffic, user behavior analytics (UBA), endpoint telemetry, and system logs in real-time. Anomaly detection models establish behavioral baselines for users, systems, and network segments, flagging deviations that suggest compromise. These models identify lateral movement patterns, data staging for exfiltration, credential misuse, and insider threat indicators that rule-based systems miss.</p><h3>Capabilities</h3><ul><li>Real-time threat detection with sub-minute alerting for high-severity indicators</li><li>Automated incident triage reducing SOC analyst workload by 60%</li><li>User behavior analytics detecting insider threats with 85% fewer false positives than rule-based approaches</li><li>Compliance with NIS2 directive requirements and Swiss Federal Information Security Act (ISA)</li></ul>`},
-    de:{title:'KI-gesteuerte Cybersicherheit für Life-Sciences-Infrastruktur',desc:'ML-basierte Bedrohungserkennung zum Schutz sensibler F&E- und Patientendaten.',read:'8 Min.',date:'Nov. 2025',
-      content:`<h3>Die Bedrohungslandschaft</h3><p>ML-basierte SOCs analysieren Netzwerkverkehr, Benutzerverhalten und Endpunkt-Telemetrie in Echtzeit. Anomalieerkennung identifiziert laterale Bewegung, Datenexfiltration und Insider-Bedrohungen.</p><h3>Fähigkeiten</h3><ul><li>Echtzeit-Bedrohungserkennung mit Sub-Minuten-Alarmierung</li><li>60% weniger SOC-Analystenaufwand</li><li>85% weniger Fehlalarme bei Insider-Bedrohungen</li><li>NIS2- und Schweizer ISA-Konformität</li></ul>`}
-  },
-  {id:20,cat:'it',slug:'computer-system-validation-ai-framework',
-    tags:['CSV','GAMP 5','Validation','AI/ML Systems','SaMD','FDA','EMA','Swissmedic','Change Control','Model Lifecycle'],
-    en:{title:'Computer System Validation in the Age of AI: A Modern Framework',desc:'Adapting GAMP 5 and CSV practices for AI/ML systems in regulated Life Sciences.',read:'10 min',date:'Oct 2025',
-      content:`<h3>The Validation Gap</h3><p>Traditional Computer System Validation (CSV) frameworks were designed for deterministic software: given the same inputs, the system always produces the same outputs. AI and ML systems fundamentally challenge this paradigm — their outputs are probabilistic, they may evolve through continuous learning, and their decision logic is often not fully interpretable. Standard GAMP 5 software categories (1-5) don't cleanly accommodate these characteristics.</p><p>Yet the regulatory requirement for validated systems hasn't changed: any computerized system supporting GxP activities must be validated to ensure it consistently performs as intended. The challenge is adapting proven validation principles to the unique characteristics of AI/ML without either over-engineering (treating every model as Category 5 custom software) or under-validating (assuming standard IT controls suffice).</p><h3>A Risk-Based Framework for AI Validation</h3><p>The framework combines GAMP 5 risk-based principles with emerging regulatory guidance from FDA, EMA, and Swissmedic. AI/ML systems are classified along two dimensions: GxP impact (direct patient safety impact, data integrity impact, or business process support) and model complexity (rule-based, supervised ML, unsupervised ML, reinforcement learning, generative AI). This classification matrix determines the appropriate validation rigor.</p><h3>Key Framework Elements</h3><ul><li>Intended Use Documentation: precise definition of what the AI system is expected to do, including performance boundaries, known limitations, and failure modes</li><li>Training Data Governance: provenance, quality, representativeness, and bias assessment of training datasets</li><li>Continuous Performance Monitoring: real-time dashboards tracking model accuracy, drift indicators, and distribution shift metrics — replacing point-in-time validation with continuous assurance</li><li>Change Control for Model Updates: formal processes for evaluating, testing, and approving model retraining, hyperparameter changes, and architecture modifications</li><li>Explainability Documentation: appropriate to model type and risk level — from feature importance plots for gradient boosted models to attention visualization for transformer architectures</li></ul><h3>Regulatory Alignment</h3><p>This framework aligns with EMA's reflection paper on AI in the product lifecycle, Swissmedic's evolving guidance on digital health technologies, and FDA's proposed Total Product Lifecycle (TPLC) approach for AI/ML-based Software as a Medical Device. Organizations implementing this framework position themselves for regulatory success while enabling responsible AI innovation in Life Sciences.</p>`},
-    de:{title:'Computer System Validation im Zeitalter der KI: Ein modernes Framework',desc:'Anpassung von GAMP 5 und CSV-Praktiken für KI/ML-Systeme in regulierten Life Sciences.',read:'10 Min.',date:'Okt. 2025',
-      content:`<h3>Die Validierungslücke</h3><p>Traditionelle CSV-Frameworks wurden für deterministische Software entworfen. KI/ML-Systeme mit probabilistischen Outputs und kontinuierlichem Lernen passen nicht in klassische GAMP-5-Kategorien. Das Framework kombiniert GAMP-5-Prinzipien mit regulatorischer Guidance von FDA, EMA und Swissmedic.</p><h3>Schlüsselelemente</h3><ul><li>Intended-Use-Dokumentation mit Performance-Grenzen und Fehlermodi</li><li>Training-Data-Governance: Provenienz, Qualität und Bias-Bewertung</li><li>Kontinuierliches Performance-Monitoring statt Point-in-Time-Validierung</li><li>Change Control für Modell-Retraining und Updates</li><li>Erklärbarkeitsdokumentation, angemessen zum Risikoprofil</li></ul><h3>Regulatorische Ausrichtung</h3><p>Ausrichtung auf EMA-Reflexionspapier, Swissmedic-Guidance und FDA TPLC-Ansatz für KI/ML-basierte SaMD.</p>`}
-  }
-];
-
-// ===== LANGUAGE =====
-let currentLang = 'en';
 function setLang(lang) {
   currentLang = lang;
+  localStorage.setItem('ang_lang', lang);
   document.documentElement.lang = lang;
-  document.querySelectorAll('[data-'+lang+']').forEach(el => {
-    const val = el.getAttribute('data-'+lang);
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = val;
-    else el.innerHTML = val;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.innerHTML = el.getAttribute(`data-${lang}`) || el.innerHTML;
   });
-  document.getElementById('langToggle').textContent = lang === 'en' ? 'DE' : 'EN';
-  renderArticles();
-  if (currentArticleSlug) showArticle(currentArticleSlug);
+  const toggle = document.getElementById('langToggle');
+  if (toggle) toggle.textContent = lang === 'en' ? 'DE' : 'EN';
 }
 
-// ===== RENDERING =====
-let activeFilter = 'all';
-let currentArticleSlug = null;
-
-function renderArticles() {
-  const grid = document.getElementById('articlesGrid');
-  const filtered = activeFilter === 'all' ? articles : articles.filter(a => a.cat === activeFilter);
-  const catLabel = {rd: currentLang==='en'?'AI for R&D':'KI für F&E', com: currentLang==='en'?'AI for Commercial':'KI für Commercial', it: currentLang==='en'?'AI for Core IT':'KI für Core IT'};
-  grid.innerHTML = filtered.map(a => {
-    const d = a[currentLang];
-    return `<a href="#${a.slug}" class="article-card" style="text-decoration:none;color:inherit;">
-      <div class="article-top cat-${a.cat}"></div>
-      <div class="article-body">
-        <div class="article-cat cat-${a.cat}">${catLabel[a.cat]}</div>
-        <h3>${d.title}</h3>
-        <p>${d.desc}</p>
-        <div class="article-tags">${a.tags.slice(0,4).map(t=>'<span class="article-tag">'+t+'</span>').join('')}</div>
-        <div class="article-meta">
-          <span>${d.date} · ${d.read} · ANG Associates</span>
-          <span class="article-read">${currentLang==='en'?'Read →':'Lesen →'}</span>
-        </div>
-      </div>
-    </a>`;
-  }).join('');
-}
-
-function showArticle(slug) {
-  const a = articles.find(x => x.slug === slug);
-  if (!a) return;
-  currentArticleSlug = slug;
-  const d = a[currentLang];
-  const catLabel = {rd: currentLang==='en'?'AI for R&D':'KI für F&E', com: currentLang==='en'?'AI for Commercial':'KI für Commercial', it: currentLang==='en'?'AI for Core IT':'KI für Core IT'};
-  document.getElementById('apCat').textContent = catLabel[a.cat];
-  document.getElementById('apCat').className = 'article-page-cat cat-' + a.cat;
-  document.getElementById('apTitle').textContent = d.title;
-  document.getElementById('apDate').textContent = d.date;
-  document.getElementById('apRead').textContent = d.read;
-  document.getElementById('apContent').innerHTML = d.content;
-  document.getElementById('apTags').innerHTML = a.tags.map(t => '<span class="article-page-tag">'+t+'</span>').join('');
-  document.getElementById('listingView').style.display = 'none';
-  document.getElementById('articleView').classList.add('active');
-  window.scrollTo(0, 0);
-  document.title = d.title + ' – ANG Associates';
-  trackEvent('view_article', {
-    title: d.title,
-    category: a.cat,
-    slug: slug
+function applyFilter(filter) {
+  activeFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === filter);
+  });
+  document.querySelectorAll('.article-card').forEach(card => {
+    const show = filter === 'all' || card.dataset.cat === filter;
+    card.style.display = show ? 'block' : 'none';
   });
 }
 
-function showListing() {
-  currentArticleSlug = null;
-  document.getElementById('listingView').style.display = '';
-  document.getElementById('articleView').classList.remove('active');
-  document.title = 'Insights – ANG Associates | AI in Life Sciences';
-  if (localStorage.getItem('cookie_consent') === 'accepted') {
-    gtag('event', 'page_view', {
-      page_title: document.title,
-      page_path: window.location.pathname,
-      page_location: window.location.origin + window.location.pathname
-    });
-  }
-}
-
-// ===== ROUTING =====
-function handleHash() {
-  const hash = window.location.hash.slice(1);
-  if (hash && articles.find(a => a.slug === hash)) {
-    showArticle(hash);
-  } else {
-    showListing();
-  }
-}
-window.addEventListener('hashchange', handleHash);
-
-document.getElementById('articleBack').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.location.hash = '';
-  showListing();
-});
-
-// Filters
 document.querySelector('.filters-inner').addEventListener('click', e => {
   if (!e.target.classList.contains('filter-btn')) return;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  e.target.classList.add('active');
-  activeFilter = e.target.dataset.filter;
-  renderArticles();
+  applyFilter(e.target.dataset.filter);
 });
 
-// Nav
-document.getElementById('hamburger').onclick = () => document.getElementById('navLinks').classList.toggle('open');
-window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20));
+document.querySelectorAll('.article-card').forEach(card => {
+  card.addEventListener('click', () => {
+    trackEvent('view_article_listing_click', {
+      article_url: card.getAttribute('href'),
+      category: card.dataset.cat,
+      page_path: window.location.pathname
+    });
+  });
+});
+
+document.getElementById('hamburger').onclick = () => {
+  document.getElementById('navLinks').classList.toggle('open');
+};
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+});
 document.getElementById('langToggle').onclick = () => setLang(currentLang === 'en' ? 'de' : 'en');
 
 // Cookies
@@ -776,41 +352,48 @@ document.getElementById('cookieDecline').onclick = () => {
 };
 
 let analyticsEnabled = false;
-
 function enableTracking() {
   if (analyticsEnabled) return;
   analyticsEnabled = true;
 
   gtag('config', 'G-0R332K5JJJ', {
-    page_path: window.location.pathname + window.location.hash,
+    page_path: window.location.pathname,
     anonymize_ip: true
   });
 
   gtag('event', 'page_view', {
     page_title: document.title,
-    page_path: window.location.pathname + window.location.hash,
+    page_path: window.location.pathname,
     page_location: window.location.href,
     language: document.documentElement.lang || 'en'
   });
 }
-
 function trackEvent(name, data = {}) {
   if (localStorage.getItem('cookie_consent') === 'accepted') {
     gtag('event', name, data);
   }
 }
 
-// Privacy (minimal inline version)
-function openPrivacy() { document.getElementById('privacyOverlay').classList.add('active'); document.body.style.overflow='hidden';
-  document.getElementById('privacyTitle').textContent = currentLang==='en' ? 'Privacy Policy' : 'Datenschutzerklärung';
-  document.getElementById('privacyContent').innerHTML = currentLang==='en' ? '<p>For the full privacy policy, please visit our <a href="index.html">main website</a>.</p>' : '<p>Die vollständige Datenschutzerklärung finden Sie auf unserer <a href="index.html">Hauptwebsite</a>.</p>';
+// Privacy
+function openPrivacy() {
+  document.getElementById('privacyOverlay').classList.add('active');
+  document.body.style.overflow='hidden';
+  document.getElementById('privacyTitle').textContent = currentLang==='en' ? 'Privacy Policy' : 'Datenschutzerklaerung';
+  document.getElementById('privacyContent').innerHTML = currentLang==='en'
+    ? '<p>For the full privacy policy, please visit our <a href="index.html">main website</a>.</p>'
+    : '<p>Die vollstaendige Datenschutzerklaerung finden Sie auf unserer <a href="index.html">Hauptwebsite</a>.</p>';
 }
-function closePrivacy() { document.getElementById('privacyOverlay').classList.remove('active'); document.body.style.overflow=''; }
-document.getElementById('privacyOverlay').addEventListener('click', function(e) { if(e.target===this) closePrivacy(); });
+function closePrivacy() {
+  document.getElementById('privacyOverlay').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.getElementById('privacyOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closePrivacy();
+});
 
 // Init
-renderArticles();
-handleHash();
+setLang(currentLang);
+applyFilter('all');
 initCookies();
 </script>
 </body>
