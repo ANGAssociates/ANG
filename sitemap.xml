@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
-  <url>
-    <loc>https://ang-associates.ch/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Insights Hub -->
-  <url>
-    <loc>https://ang-associates.ch/articles.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Articles (SEO Pages) -->
- <url>
-  <loc>https://ang-associates.ch/ai-pharma-switzerland.html</loc>
-</url>
-  
-  <url>
-    <loc>https://ang-associates.ch/ai-pharma-rd.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ang-associates.ch/genai-commercial-life-sciences.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://ang-associates.ch/ai-core-it-pharma.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
+  <url><loc>https://angassociates.github.io/ANG/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://angassociates.github.io/ANG/articles.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://angassociates.github.io/ANG/ai-drug-target-identification-oncology.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/genai-clinical-trial-protocol-design.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/ml-biomarker-discovery-precision-medicine.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/genai-personalized-hcp-engagement.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/predictive-analytics-pharma-market-access.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/ai-it-service-management-gxp.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/intelligent-data-integration-erp-lims-mes.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/ai-strategy-pharma-roadmap.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/responsible-ai-governance-pharma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/computer-system-validation-ai-framework.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/ai-diagnostics-companion-digital-health.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/it-delivery-management-pharma-transformation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/cloud-migration-pharma-validated-systems.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/vendor-management-multi-partner-pharma-it.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/project-management-pharma-it-gxp.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/hybrid-project-management-regulated-environments.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/program-management-pharma-transformation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/program-governance-pharma-enterprise.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/agile-transformation-pharma-safe.html</loc><priority>0.8</priority></url>
+  <url><loc>https://angassociates.github.io/ANG/agile-gxp-compliance-best-practices.html</loc><priority>0.8</priority></url>
 </urlset>
