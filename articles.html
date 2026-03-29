@@ -140,6 +140,14 @@ footer { background:var(--c-dark); border-top:1px solid rgba(255,255,255,0.08); 
   .modal { padding:1.5rem; }
 }
 </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0R332K5JJJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
 </head>
 <body>
 
@@ -696,6 +704,11 @@ function showArticle(slug) {
   document.getElementById('articleView').classList.add('active');
   window.scrollTo(0, 0);
   document.title = d.title + ' – ANG Associates';
+  trackEvent('view_article', {
+    title: d.title,
+    category: a.cat,
+    slug: slug
+  });
 }
 
 function showListing() {
@@ -703,6 +716,13 @@ function showListing() {
   document.getElementById('listingView').style.display = '';
   document.getElementById('articleView').classList.remove('active');
   document.title = 'Insights – ANG Associates | AI in Life Sciences';
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('event', 'page_view', {
+      page_title: document.title,
+      page_path: window.location.pathname,
+      page_location: window.location.origin + window.location.pathname
+    });
+  }
 }
 
 // ===== ROUTING =====
@@ -739,10 +759,46 @@ document.getElementById('langToggle').onclick = () => setLang(currentLang === 'e
 // Cookies
 function initCookies() {
   const c = localStorage.getItem('cookie_consent');
-  if (!c) document.getElementById('cookieBanner').classList.add('show');
+  if (!c) {
+    document.getElementById('cookieBanner').classList.add('show');
+  } else if (c === 'accepted') {
+    enableTracking();
+  }
 }
-document.getElementById('cookieAccept').onclick = () => { localStorage.setItem('cookie_consent','accepted'); document.getElementById('cookieBanner').classList.remove('show'); };
-document.getElementById('cookieDecline').onclick = () => { localStorage.setItem('cookie_consent','declined'); document.getElementById('cookieBanner').classList.remove('show'); };
+document.getElementById('cookieAccept').onclick = () => {
+  localStorage.setItem('cookie_consent','accepted');
+  document.getElementById('cookieBanner').classList.remove('show');
+  enableTracking();
+};
+document.getElementById('cookieDecline').onclick = () => {
+  localStorage.setItem('cookie_consent','declined');
+  document.getElementById('cookieBanner').classList.remove('show');
+};
+
+let analyticsEnabled = false;
+
+function enableTracking() {
+  if (analyticsEnabled) return;
+  analyticsEnabled = true;
+
+  gtag('config', 'G-0R332K5JJJ', {
+    page_path: window.location.pathname + window.location.hash,
+    anonymize_ip: true
+  });
+
+  gtag('event', 'page_view', {
+    page_title: document.title,
+    page_path: window.location.pathname + window.location.hash,
+    page_location: window.location.href,
+    language: document.documentElement.lang || 'en'
+  });
+}
+
+function trackEvent(name, data = {}) {
+  if (localStorage.getItem('cookie_consent') === 'accepted') {
+    gtag('event', name, data);
+  }
+}
 
 // Privacy (minimal inline version)
 function openPrivacy() { document.getElementById('privacyOverlay').classList.add('active'); document.body.style.overflow='hidden';
