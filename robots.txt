@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://ang-associates.ch/sitemap.xml
+Sitemap: https://angassociates.github.io/ANG/sitemap.xml
