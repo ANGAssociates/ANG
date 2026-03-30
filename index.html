@@ -695,7 +695,7 @@ footer {
         </div>
         <div class="form-consent">
           <input type="checkbox" id="consent" required>
-          <label for="consent" data-en="I agree to ANG Associates processing my data to respond to my inquiry. See our <a href='#' onclick='openPrivacy();return false;' style='color:var(--c-highlight);text-decoration:underline;'>Privacy Policy</a>." data-de="Ich stimme zu, dass ANG Associates meine Daten zur Beantwortung meiner Anfrage verarbeitet. Siehe unsere <a href='#' onclick='openPrivacy();return false;' style='color:var(--c-highlight);text-decoration:underline;'>Datenschutzrichtlinie</a>.">I agree to ANG Associates processing my data to respond to my inquiry. See our <a href="#" onclick="openPrivacy();return false;" style="color:var(--c-highlight);text-decoration:underline;">Privacy Policy</a>.</label>
+          <label for="consent" data-en="I agree to ANG Associates processing my data to respond to my inquiry. See our <a href='privacy-policy.html' style='color:var(--c-highlight);text-decoration:underline;'>Privacy Policy</a>." data-de="Ich stimme zu, dass ANG Associates meine Daten zur Beantwortung meiner Anfrage verarbeitet. Siehe unsere <a href='privacy-policy.html' style='color:var(--c-highlight);text-decoration:underline;'>Datenschutzrichtlinie</a>.">I agree to ANG Associates processing my data to respond to my inquiry. See our <a href="privacy-policy.html" style="color:var(--c-highlight);text-decoration:underline;">Privacy Policy</a>.</label>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" data-en="Send Message" data-de="Nachricht senden">Send Message</button>
       </form>
@@ -710,10 +710,10 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="container footer-inner">
-    <span>&copy; 2026 ANG Associates. <span data-en="All rights reserved." data-de="Alle Rechte vorbehalten.">All rights reserved.</span></span>
+    <span>&copy; 2026 ANG Associates GmbH. <span data-en="All rights reserved." data-de="Alle Rechte vorbehalten.">All rights reserved.</span></span>
     <div class="footer-links">
-      <a href="#" onclick="openPrivacy();return false;" data-en="Privacy Policy" data-de="Datenschutz">Privacy Policy</a>
-      <a href="#" data-en="Imprint" data-de="Impressum">Imprint</a>
+      <a href="privacy-policy.html" data-en="Privacy Policy" data-de="Datenschutz">Privacy Policy</a>
+      <a href="imprint.html" data-en="Imprint" data-de="Impressum">Imprint</a>
       <a href="#" id="cookieSettings" data-en="Cookie Settings" data-de="Cookie-Einstellungen">Cookie Settings</a>
     </div>
   </div>
@@ -722,7 +722,7 @@ footer {
 <!-- COOKIE BANNER -->
 <div class="cookie-banner" id="cookieBanner">
   <div class="cookie-inner">
-    <p class="cookie-text" data-en="We use cookies to analyze site traffic and improve your experience. By clicking 'Accept', you consent to our use of analytics cookies. <a href='#' onclick='openPrivacy();return false;'>Learn more</a>" data-de="Wir verwenden Cookies zur Analyse des Website-Traffics und zur Verbesserung Ihrer Erfahrung. Mit Klick auf 'Akzeptieren' stimmen Sie der Nutzung von Analyse-Cookies zu. <a href='#' onclick='openPrivacy();return false;'>Mehr erfahren</a>">We use cookies to analyze site traffic and improve your experience. By clicking "Accept", you consent to our use of analytics cookies. <a href="#" onclick="openPrivacy();return false;">Learn more</a></p>
+    <p class="cookie-text" data-en="We use cookies to analyze site traffic and improve your experience. By clicking 'Accept', you consent to our use of analytics cookies. <a href='privacy-policy.html'>Learn more</a>" data-de="Wir verwenden Cookies zur Analyse des Website-Traffics und zur Verbesserung Ihrer Erfahrung. Mit Klick auf 'Akzeptieren' stimmen Sie der Nutzung von Analyse-Cookies zu. <a href='privacy-policy.html'>Mehr erfahren</a>">We use cookies to analyze site traffic and improve your experience. By clicking "Accept", you consent to our use of analytics cookies. <a href="privacy-policy.html">Learn more</a></p>
     <div class="cookie-btns">
       <button class="cookie-btn cookie-decline" id="cookieDecline" data-en="Decline" data-de="Ablehnen">Decline</button>
       <button class="cookie-btn cookie-accept" id="cookieAccept" data-en="Accept" data-de="Akzeptieren">Accept</button>
@@ -1012,167 +1012,6 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 renderArticles();
 initCookies();
 </script>
-<!-- PRIVACY POLICY MODAL -->
-<div class="modal-overlay" id="privacyOverlay">
-  <div class="modal" style="max-width:820px;">
-    <button class="modal-close" onclick="closePrivacy()">&times;</button>
-    <h2 id="privacyTitle">Privacy Policy</h2>
-    <div class="modal-content" id="privacyContent"></div>
-  </div>
-</div>
 
-<script>
-const privacyData = {
-  en: {
-    title: 'Privacy Policy',
-    content: `
-<p><strong>Last updated:</strong> March 2026</p>
-<p>ANG Associates ("we", "us", "our"), based in Basel, Switzerland, is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, and protect your information in accordance with the EU General Data Protection Regulation (GDPR), the Swiss Federal Act on Data Protection (nDSG/FADP), and applicable cantonal data protection laws.</p>
-
-<h3>1. Data Controller</h3>
-<p>ANG Associates<br>Basel Area, Switzerland<br>Email: info@ang-associates.ch</p>
-<p>For any data protection inquiries, please contact us at the email address above.</p>
-
-<h3>2. What Personal Data We Collect</h3>
-<p>We may collect the following categories of personal data:</p>
-<p><strong>Contact form submissions:</strong> First name, last name, work email address, company name, area of interest, and your message content.</p>
-<p><strong>Website usage data (with consent):</strong> Pages visited, scroll depth, referral source, browser type, screen resolution, language preference, and approximate geographic region. We do not collect IP addresses in our analytics.</p>
-<p><strong>Cookie data (with consent):</strong> Analytics cookies that help us understand how visitors interact with our website. See Section 7 below for details.</p>
-
-<h3>3. Legal Basis for Processing</h3>
-<p>We process personal data based on the following legal grounds under GDPR Art. 6:</p>
-<p><strong>Consent (Art. 6(1)(a)):</strong> For analytics cookies and website tracking. You may withdraw consent at any time via the "Cookie Settings" link in the footer.</p>
-<p><strong>Legitimate interest (Art. 6(1)(f)):</strong> For responding to your inquiries submitted through our contact form, and for maintaining the security and functionality of our website.</p>
-<p><strong>Contract performance (Art. 6(1)(b)):</strong> When processing is necessary for pre-contractual discussions initiated by you.</p>
-
-<h3>4. How We Use Your Data</h3>
-<p>We use your personal data exclusively for the following purposes:</p>
-<p>Responding to your inquiries and providing information about our services; analyzing website usage to improve our content and user experience (only with your consent); ensuring the technical security and proper functioning of our website; complying with legal obligations.</p>
-<p>We do <strong>not</strong> use your data for automated decision-making, profiling, or direct marketing without your explicit consent.</p>
-
-<h3>5. Data Sharing and Transfers</h3>
-<p>We do not sell, rent, or trade your personal data to third parties.</p>
-<p>We may share data with trusted service providers who assist us in operating our website and delivering services (e.g., hosting providers, email service providers). All service providers are contractually obligated to process data in compliance with GDPR and Swiss data protection law.</p>
-<p><strong>International transfers:</strong> If data is transferred outside the EEA or Switzerland, we ensure appropriate safeguards are in place, such as EU Standard Contractual Clauses (SCCs) or adequacy decisions recognized by the European Commission and the Swiss Federal Council.</p>
-
-<h3>6. Data Retention</h3>
-<p>Contact form data is retained for the duration of our business relationship and for a maximum of 2 years after last contact, unless a longer retention period is required by law.</p>
-<p>Analytics data is aggregated and anonymized. Raw analytics data is deleted after 14 months.</p>
-<p>Cookie consent preferences are stored in your browser's local storage and persist until you clear your browser data or update your preferences.</p>
-
-<h3>7. Cookies</h3>
-<p><strong>Essential cookies:</strong> We use strictly necessary cookies for the basic functioning of our website (e.g., language preference). These do not require consent.</p>
-<p><strong>Analytics cookies:</strong> With your consent, we use analytics cookies to understand website usage patterns. These cookies are only activated after you click "Accept" on our cookie banner. You can withdraw consent at any time by clicking "Cookie Settings" in the footer.</p>
-<p>We do not use advertising, retargeting, or third-party tracking cookies.</p>
-
-<h3>8. Your Rights</h3>
-<p>Under GDPR and Swiss data protection law, you have the following rights:</p>
-<p><strong>Right of access (Art. 15 GDPR):</strong> You may request a copy of your personal data held by us.</p>
-<p><strong>Right to rectification (Art. 16 GDPR):</strong> You may request correction of inaccurate data.</p>
-<p><strong>Right to erasure (Art. 17 GDPR):</strong> You may request deletion of your personal data ("right to be forgotten").</p>
-<p><strong>Right to restriction (Art. 18 GDPR):</strong> You may request restriction of data processing under certain conditions.</p>
-<p><strong>Right to data portability (Art. 20 GDPR):</strong> You may request your data in a structured, machine-readable format.</p>
-<p><strong>Right to object (Art. 21 GDPR):</strong> You may object to processing based on legitimate interest.</p>
-<p><strong>Right to withdraw consent:</strong> Where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of prior processing.</p>
-<p>To exercise any of these rights, please contact us at info@ang-associates.ch. We will respond within 30 days.</p>
-
-<h3>9. Data Security</h3>
-<p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. These include encrypted data transmission (TLS/SSL), access controls, and regular security reviews.</p>
-
-<h3>10. Supervisory Authority</h3>
-<p>If you believe your data protection rights have been violated, you have the right to lodge a complaint with:</p>
-<p><strong>Switzerland:</strong> Federal Data Protection and Information Commissioner (FDPIC) — <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a></p>
-<p><strong>EU:</strong> Your local Data Protection Authority (DPA) in your country of residence.</p>
-
-<h3>11. Changes to This Policy</h3>
-<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent revision. We encourage you to review this page periodically. Continued use of the website after changes constitutes acceptance of the updated policy.</p>
-
-<h3>12. Contact</h3>
-<p>For any questions regarding this Privacy Policy or your personal data, please contact:<br>
-ANG Associates<br>
-Email: info@ang-associates.ch<br>
-Basel Area, Switzerland</p>
-`
-  },
-  de: {
-    title: 'Datenschutzerklärung',
-    content: `
-<p><strong>Letzte Aktualisierung:</strong> März 2026</p>
-<p>ANG Associates («wir», «uns», «unser»), mit Sitz in Basel, Schweiz, verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten gemäss der EU-Datenschutz-Grundverordnung (DSGVO), dem Schweizer Bundesgesetz über den Datenschutz (nDSG) und den anwendbaren kantonalen Datenschutzgesetzen erheben, verwenden, speichern und schützen.</p>
-
-<h3>1. Verantwortlicher</h3>
-<p>ANG Associates<br>Region Basel, Schweiz<br>E-Mail: info@ang-associates.ch</p>
-<p>Für datenschutzbezogene Anfragen kontaktieren Sie uns bitte unter der oben genannten E-Mail-Adresse.</p>
-
-<h3>2. Welche personenbezogenen Daten wir erheben</h3>
-<p>Wir können folgende Kategorien personenbezogener Daten erheben:</p>
-<p><strong>Kontaktformular-Eingaben:</strong> Vorname, Nachname, geschäftliche E-Mail-Adresse, Firmenname, Interessengebiet und Nachrichteninhalt.</p>
-<p><strong>Website-Nutzungsdaten (mit Einwilligung):</strong> Besuchte Seiten, Scroll-Tiefe, Verweisquelle, Browsertyp, Bildschirmauflösung, Sprachpräferenz und ungefähre geografische Region. Wir erfassen keine IP-Adressen in unserer Analyse.</p>
-<p><strong>Cookie-Daten (mit Einwilligung):</strong> Analyse-Cookies, die uns helfen zu verstehen, wie Besucher mit unserer Website interagieren. Siehe Abschnitt 7 für Details.</p>
-
-<h3>3. Rechtsgrundlage der Verarbeitung</h3>
-<p>Wir verarbeiten personenbezogene Daten auf folgenden Rechtsgrundlagen gemäss Art. 6 DSGVO:</p>
-<p><strong>Einwilligung (Art. 6(1)(a)):</strong> Für Analyse-Cookies und Website-Tracking. Sie können Ihre Einwilligung jederzeit über den Link «Cookie-Einstellungen» in der Fusszeile widerrufen.</p>
-<p><strong>Berechtigtes Interesse (Art. 6(1)(f)):</strong> Für die Beantwortung Ihrer über unser Kontaktformular eingereichten Anfragen und zur Gewährleistung der Sicherheit unserer Website.</p>
-<p><strong>Vertragserfüllung (Art. 6(1)(b)):</strong> Wenn die Verarbeitung für vorvertragliche Massnahmen erforderlich ist.</p>
-
-<h3>4. Wie wir Ihre Daten verwenden</h3>
-<p>Wir verwenden Ihre personenbezogenen Daten ausschliesslich für folgende Zwecke:</p>
-<p>Beantwortung Ihrer Anfragen und Bereitstellung von Informationen über unsere Dienstleistungen; Analyse der Website-Nutzung zur Verbesserung unserer Inhalte (nur mit Ihrer Einwilligung); Gewährleistung der technischen Sicherheit und ordnungsgemässen Funktion unserer Website; Erfüllung gesetzlicher Pflichten.</p>
-<p>Wir verwenden Ihre Daten <strong>nicht</strong> für automatisierte Entscheidungsfindung, Profiling oder Direktmarketing ohne Ihre ausdrückliche Einwilligung.</p>
-
-<h3>5. Datenweitergabe und -übermittlung</h3>
-<p>Wir verkaufen, vermieten oder handeln Ihre personenbezogenen Daten nicht an Dritte.</p>
-<p>Wir können Daten mit vertrauenswürdigen Dienstleistern teilen, die uns beim Betrieb unserer Website unterstützen. Alle Dienstleister sind vertraglich zur DSGVO- und DSG-konformen Datenverarbeitung verpflichtet.</p>
-<p><strong>Internationale Übermittlungen:</strong> Bei Datenübermittlungen ausserhalb des EWR oder der Schweiz stellen wir angemessene Garantien sicher, wie EU-Standardvertragsklauseln (SCCs) oder Angemessenheitsbeschlüsse.</p>
-
-<h3>6. Datenspeicherung</h3>
-<p>Kontaktformulardaten werden für die Dauer der Geschäftsbeziehung und maximal 2 Jahre nach dem letzten Kontakt aufbewahrt, sofern keine längere Aufbewahrungsfrist gesetzlich vorgeschrieben ist.</p>
-<p>Analysedaten werden aggregiert und anonymisiert. Rohe Analysedaten werden nach 14 Monaten gelöscht.</p>
-<p>Cookie-Einwilligungspräferenzen werden im lokalen Speicher Ihres Browsers gespeichert.</p>
-
-<h3>7. Cookies</h3>
-<p><strong>Essentielle Cookies:</strong> Wir verwenden unbedingt erforderliche Cookies für die Grundfunktion unserer Website (z.B. Sprachpräferenz). Diese erfordern keine Einwilligung.</p>
-<p><strong>Analyse-Cookies:</strong> Mit Ihrer Einwilligung verwenden wir Analyse-Cookies zum Verständnis der Website-Nutzung. Diese werden erst nach Klick auf «Akzeptieren» aktiviert. Sie können Ihre Einwilligung jederzeit über «Cookie-Einstellungen» widerrufen.</p>
-<p>Wir verwenden keine Werbe-, Retargeting- oder Drittanbieter-Tracking-Cookies.</p>
-
-<h3>8. Ihre Rechte</h3>
-<p>Gemäss DSGVO und Schweizer Datenschutzrecht haben Sie folgende Rechte:</p>
-<p><strong>Auskunftsrecht (Art. 15 DSGVO):</strong> Sie können eine Kopie Ihrer bei uns gespeicherten Daten anfordern.</p>
-<p><strong>Recht auf Berichtigung (Art. 16 DSGVO):</strong> Sie können die Korrektur unrichtiger Daten verlangen.</p>
-<p><strong>Recht auf Löschung (Art. 17 DSGVO):</strong> Sie können die Löschung Ihrer Daten verlangen («Recht auf Vergessenwerden»).</p>
-<p><strong>Recht auf Einschränkung (Art. 18 DSGVO):</strong> Sie können die Einschränkung der Verarbeitung verlangen.</p>
-<p><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO):</strong> Sie können Ihre Daten in einem strukturierten, maschinenlesbaren Format anfordern.</p>
-<p><strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Sie können der Verarbeitung auf Basis berechtigter Interessen widersprechen.</p>
-<p><strong>Recht auf Widerruf der Einwilligung:</strong> Soweit die Verarbeitung auf Einwilligung beruht, können Sie diese jederzeit widerrufen.</p>
-<p>Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte unter info@ang-associates.ch. Wir antworten innerhalb von 30 Tagen.</p>
-
-<h3>9. Datensicherheit</h3>
-<p>Wir setzen angemessene technische und organisatorische Massnahmen zum Schutz Ihrer Daten gegen unbefugten Zugriff, Veränderung, Offenlegung oder Zerstörung ein, einschliesslich verschlüsselter Datenübertragung (TLS/SSL), Zugriffskontrollen und regelmässiger Sicherheitsüberprüfungen.</p>
-
-<h3>10. Aufsichtsbehörde</h3>
-<p>Wenn Sie der Ansicht sind, dass Ihre Datenschutzrechte verletzt wurden, haben Sie das Recht, Beschwerde einzureichen bei:</p>
-<p><strong>Schweiz:</strong> Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB) — <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a></p>
-<p><strong>EU:</strong> Ihrer lokalen Datenschutzbehörde in Ihrem Wohnsitzland.</p>
-
-<h3>11. Änderungen dieser Richtlinie</h3>
-<p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Das Datum «Letzte Aktualisierung» oben zeigt die letzte Überarbeitung an. Die weitere Nutzung der Website nach Änderungen gilt als Zustimmung zur aktualisierten Richtlinie.</p>
-
-<h3>12. Kontakt</h3>
-<p>Bei Fragen zu dieser Datenschutzerklärung oder Ihren personenbezogenen Daten kontaktieren Sie bitte:<br>
-ANG Associates<br>
-E-Mail: info@ang-associates.ch<br>
-Region Basel, Schweiz</p>
-`
-  }
-};
-
-function openPrivacy() {
-  const d = privacyData[currentLang];
-  document.getElementById('privacyTitle').textContent = d.title;
-  document.getElementById('privacyContent').innerHTML = d.content;
-  document.getElementById('privacyOverlay').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closePrivacy() {
-  document.getElementById('priv
+</body>
+</html>
