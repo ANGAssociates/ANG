@@ -4,30 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Machine Learning in Biomarker Discovery for Precision Medicine – ANG Associates</title>
-<meta name="description" content="Using ML to identify predictive biomarkers from multi-omics datasets for companion diagnostics.">
+<meta name="description" content="Using ML to identify predictive and prognostic biomarkers from multi-omics datasets for companion diagnostics.">
 <meta name="keywords" content="Biomarkers, Precision Medicine, Diagnostics, IVDR, Immunotherapy, Companion Diagnostics, Multi-Omics">
 <meta name="author" content="ANG Associates">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://ang-associates.ch/ml-biomarker-discovery-precision-medicine.html">
 <meta property="og:title" content="Machine Learning in Biomarker Discovery for Precision Medicine – ANG Associates">
-<meta property="og:description" content="Using ML to identify predictive biomarkers from multi-omics datasets for companion diagnostics.">
+<meta property="og:description" content="Using ML to identify predictive and prognostic biomarkers from multi-omics datasets for companion diagnostics.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ang-associates.ch/ml-biomarker-discovery-precision-medicine.html">
+<meta property="article:author" content="ANG Associates">
+<meta property="article:section" content="AI for R&D">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org","@type":"Article",
-  "headline":"Machine Learning in Biomarker Discovery for Precision Medicine","description":"Using ML to identify predictive biomarkers from multi-omics datasets for companion diagnostics.",
-  "author":{"@type":"Organization","name":"ANG Associates","url":"https://ang-associates.ch/"},
-  "publisher":{"@type":"Organization","name":"ANG Associates"},
-  "datePublished":"2026-04-01","keywords":"Biomarkers, Precision Medicine, Diagnostics, IVDR, Immunotherapy, Companion Diagnostics, Multi-Omics"
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Machine Learning in Biomarker Discovery for Precision Medicine",
+  "description": "Using ML to identify predictive and prognostic biomarkers from multi-omics datasets for companion diagnostics.",
+  "author": {"@type": "Organization", "name": "ANG Associates", "url": "https://ang-associates.ch/"},
+  "publisher": {"@type": "Organization", "name": "ANG Associates"},
+  "datePublished": "2026-04-01",
+  "keywords": "Biomarkers, Precision Medicine, Diagnostics, IVDR, Immunotherapy, Companion Diagnostics, Multi-Omics"
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--c-bg:#FAFAF8;--c-bg2:#F0EFEB;--c-surface:#FFF;--c-text:#1A1A1A;--c-text2:#5A5A58;--c-accent:#0B4F6C;--c-accent2:#0D6E8A;--c-accent-light:#E6F0F5;--c-border:#E0DED8;--c-dark:#0C1A24;--font-display:'Instrument Serif',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--max-w:1200px;--gap:clamp(1rem,3vw,2rem);}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+:root { --c-bg:#FAFAF8;--c-bg2:#F0EFEB;--c-surface:#FFFFFF;--c-text:#1A1A1A;--c-text2:#5A5A58;--c-accent:#0B4F6C;--c-accent2:#0D6E8A;--c-accent-light:#E6F0F5;--c-border:#E0DED8;--c-highlight:#B8D8E8;--c-dark:#0C1A24;--font-display:'Instrument Serif',Georgia,serif;--font-body:'DM Sans',system-ui,sans-serif;--max-w:1200px;--gap:clamp(1rem,3vw,2rem); }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
 body{font-family:var(--font-body);color:var(--c-text);background:var(--c-bg);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
 .container{max-width:var(--max-w);margin:0 auto;padding:0 var(--gap);}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,248,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--c-border);}
@@ -36,13 +42,15 @@ body{font-family:var(--font-body);color:var(--c-text);background:var(--c-bg);lin
 .nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
 .nav-links a{color:var(--c-text2);text-decoration:none;font-size:0.9rem;font-weight:500;transition:color 0.2s;}
 .nav-links a:hover{color:var(--c-accent);}
-.nav-cta{background:var(--c-accent)!important;color:#fff!important;padding:8px 20px;border-radius:6px;font-weight:600!important;}
 .nav-lang{background:var(--c-bg2);border:1px solid var(--c-border);border-radius:6px;padding:6px 12px;font-size:0.8rem;font-weight:600;cursor:pointer;color:var(--c-text2);font-family:var(--font-body);transition:all 0.2s;}
 .nav-lang:hover{background:var(--c-accent);color:#fff;border-color:var(--c-accent);}
+.nav-cta{background:var(--c-accent)!important;color:#fff!important;padding:8px 20px;border-radius:6px;font-weight:600!important;}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;}
 .hamburger svg{width:28px;height:28px;stroke:var(--c-text);}
-.article-page{padding:120px 0 60px;}.article-page-inner{max-width:760px;margin:0 auto;}
-.article-back{display:inline-flex;align-items:center;gap:0.4rem;color:var(--c-accent);text-decoration:none;font-size:0.9rem;font-weight:500;margin-bottom:2rem;}
+.article-page{padding:120px 0 60px;}
+.article-page-inner{max-width:760px;margin:0 auto;}
+.article-back{display:inline-flex;align-items:center;gap:0.4rem;color:var(--c-accent);text-decoration:none;font-size:0.9rem;font-weight:500;margin-bottom:2rem;transition:gap 0.2s;}
+.article-back:hover{gap:0.7rem;}
 .article-page-cat{font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;color:#0B4F6C;}
 .article-page h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;margin-bottom:1rem;}
 .article-page-meta{display:flex;align-items:center;gap:1.5rem;padding-bottom:1.5rem;margin-bottom:2rem;border-bottom:1px solid var(--c-border);font-size:0.85rem;color:var(--c-text2);flex-wrap:wrap;}
@@ -50,17 +58,21 @@ body{font-family:var(--font-body);color:var(--c-text);background:var(--c-bg);lin
 .author-avatar{width:32px;height:32px;border-radius:50%;background:var(--c-accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:0.75rem;}
 .article-page-content{font-size:1rem;line-height:1.85;color:var(--c-text2);}
 .article-page-content h3{color:var(--c-text);font-size:1.25rem;margin:2rem 0 0.75rem;font-weight:600;}
-.article-page-content p{margin-bottom:1.2rem;}.article-page-content ul{margin:0.5rem 0 1.5rem 1.5rem;}.article-page-content li{margin-bottom:0.5rem;}
+.article-page-content p{margin-bottom:1.2rem;}
+.article-page-content ul{margin:0.5rem 0 1.5rem 1.5rem;}
+.article-page-content li{margin-bottom:0.5rem;}
 .article-page-content blockquote{border-left:3px solid var(--c-accent);padding:0.75rem 1.5rem;margin:1.5rem 0;background:var(--c-accent-light);border-radius:0 8px 8px 0;font-style:italic;}
 .article-page-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--c-border);}
 .article-page-tag{font-size:0.78rem;background:var(--c-accent-light);color:var(--c-accent);padding:4px 14px;border-radius:20px;font-weight:500;}
 .article-cta{margin-top:3rem;padding:2rem;background:var(--c-accent-light);border-radius:14px;text-align:center;}
-.article-cta h3{font-size:1.15rem;margin-bottom:0.5rem;}.article-cta p{color:var(--c-text2);font-size:0.9rem;margin-bottom:1.25rem;}
-.btn-primary{display:inline-flex;padding:14px 28px;border-radius:8px;font-weight:600;font-size:0.95rem;text-decoration:none;background:var(--c-accent);color:#fff;font-family:var(--font-body);border:none;transition:background 0.25s;}.btn-primary:hover{background:var(--c-accent2);}
+.article-cta h3{font-size:1.15rem;margin-bottom:0.5rem;}
+.article-cta p{color:var(--c-text2);font-size:0.9rem;margin-bottom:1.25rem;}
+.btn-primary{display:inline-flex;align-items:center;gap:0.5rem;padding:14px 28px;border-radius:8px;font-weight:600;font-size:0.95rem;text-decoration:none;background:var(--c-accent);color:#fff;font-family:var(--font-body);border:none;transition:background 0.25s;}
+.btn-primary:hover{background:var(--c-accent2);}
 footer{background:var(--c-dark);padding:3rem 0 2rem;color:rgba(255,255,255,0.5);font-size:0.82rem;}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
 .footer-links{display:flex;gap:1.5rem;}.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;}.footer-links a:hover{color:#fff;}
-@media(max-width:900px){.nav-links{display:none;}.nav-links.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--c-bg);padding:1.5rem var(--gap);border-bottom:1px solid var(--c-border);}.hamburger{display:block;}.article-page-inner{padding:0 1rem;}}
+@media(max-width:900px){.nav-links{display:none;}.hamburger{display:block;}.article-page-inner{padding:0 1rem;}}
 </style>
 </head>
 <body>
@@ -74,7 +86,7 @@ footer{background:var(--c-dark);padding:3rem 0 2rem;color:rgba(255,255,255,0.5);
       <li><button class="nav-lang" id="langToggle" title="Switch language">DE</button></li>
       <li><a href="index.html#contact" class="nav-cta" data-en="Get in Touch" data-de="Kontakt">Get in Touch</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
@@ -82,24 +94,32 @@ footer{background:var(--c-dark);padding:3rem 0 2rem;color:rgba(255,255,255,0.5);
 <div class="article-page">
   <div class="container article-page-inner">
     <a href="articles.html" class="article-back" data-en="&larr; Back to All Articles" data-de="&larr; Zurück zu allen Artikeln">&larr; Back to All Articles</a>
-    <div class="article-page-cat" data-en="AI for R&D" data-de="KI für F&E">AI for R&D</div>
-    <h1 data-en="Machine Learning in Biomarker Discovery for Precision Medicine" data-de="Machine Learning in der Biomarker-Entdeckung für Präzisionsmedizin">Machine Learning in Biomarker Discovery for Precision Medicine</h1>
+    <div class="article-page-cat">AI for R&D</div>
+    <h1>Machine Learning in Biomarker Discovery for Precision Medicine</h1>
     <div class="article-page-meta">
       <div class="author-badge">
         <div class="author-avatar">A</div>
-        <div><strong>ANG Associates</strong><br><span style="font-size:0.78rem;" data-en="Life Sciences &amp; AI Consulting" data-de="Life Sciences &amp; KI Beratung">Life Sciences &amp; AI Consulting</span></div>
+        <div><strong>ANG Associates</strong><br><span style="font-size:0.78rem;">Life Sciences &amp; AI Consulting</span></div>
       </div>
-      <span data-en="Jan 2026" data-de="Jan. 2026">Jan 2026</span>
-      <span data-en="10 min read" data-de="10 Min. Lesezeit">10 min read</span>
+      <span>Jan 2026</span>
+      <span>10 min read</span>
     </div>
     <div class="article-page-content" id="articleContent"><h3>The Problem: Finding Needles in High-Dimensional Haystacks</h3>
-<p>A single tumor biopsy yields 20,000+ gene expressions. Traditional statistics fail to capture non-linear biological relationships. The companion diagnostics market exceeds $6 billion.</p>
+<p>Precision medicine depends on robust biomarkers, but finding them is extraordinarily difficult. A single tumor biopsy yields expression data for 20,000+ genes, millions of methylation sites, and thousands of proteins. Traditional statistical approaches — constrained by multiple testing corrections and linear assumptions — fail to capture the complex, non-linear relationships that define biological systems. The companion diagnostics market exceeds $6 billion and grows at 12% annually, creating enormous pressure to discover and validate predictive biomarkers faster.</p>
+
 <h3>The Solution: Multi-Omics ML Pipelines</h3>
-<p>Random forests, deep learning autoencoders, and multi-omics integration capture cross-omic interactions. A Swiss firm identified a 12-gene signature with AUC 0.89 vs. 0.71 for PD-L1 alone.</p>
-<h3>The Approach: Discovery Through Regulatory Approval</h3>
-<ul><li>IVDR compliance for EU market access</li><li>Swissmedic alignment through mutual recognition</li><li>FDA SaMD transparency expectations</li></ul>
+<p>Modern ML approaches leverage complementary algorithm families. Random forests provide robust feature importance rankings. Deep learning autoencoders compress high-dimensional data into latent representations capturing non-linear relationships. Multi-omics integration learns joint representations across genomic, proteomic, and metabolomic data — capturing cross-omic interactions that single-omic analyses miss entirely. A Swiss diagnostics firm used this approach to identify a 12-gene signature predictive of pembrolizumab response in NSCLC, validated across 1,200 patients with AUC of 0.89 versus 0.71 for PD-L1 alone.</p>
+
+<h3>The Approach: From Discovery Through Regulatory Approval</h3>
+<ul>
+<li>IVDR compliance pathway for EU market access, including Annex XIII clinical evidence requirements</li>
+<li>Swissmedic alignment through mutual recognition and parallel assessment</li>
+<li>FDA expectations for AI/ML-based Software as a Medical Device (SaMD) transparency</li>
+<li>Prospective clinical validation study design aligned with CLSI EP28-A3c</li>
+</ul>
+
 <h3>How ANG Associates Can Help</h3>
-<p>We guide the complete biomarker discovery-to-market journey — AI strategy, cross-functional program management, and IT delivery for multi-omics infrastructure.</p></div>
+<p>ANG Associates guides diagnostics and pharma companies through the complete biomarker discovery-to-market journey. We provide AI strategy for ML pipeline design, project management for cross-functional biomarker programs spanning R&D, regulatory, and commercial, and IT delivery management for the data infrastructure required to support multi-omics analytics. Our regulatory knowledge ensures your AI-based companion diagnostic program is built for approval from day one.</p></div>
     <div class="article-page-tags"><span class="article-page-tag">Biomarkers</span><span class="article-page-tag">Precision Medicine</span><span class="article-page-tag">Diagnostics</span><span class="article-page-tag">IVDR</span><span class="article-page-tag">Immunotherapy</span><span class="article-page-tag">Companion Diagnostics</span><span class="article-page-tag">Multi-Omics</span></div>
     <div class="article-cta">
       <h3 data-en="Interested in this topic?" data-de="Interessiert an diesem Thema?">Interested in this topic?</h3>
@@ -110,7 +130,7 @@ footer{background:var(--c-dark);padding:3rem 0 2rem;color:rgba(255,255,255,0.5);
 </div>
 <footer>
   <div class="container footer-inner">
-    <span>&copy; 2026 ANG Associates GmbH. <span data-en="All rights reserved." data-de="Alle Rechte vorbehalten.">All rights reserved.</span></span>
+    <span>&copy; 2026 ANG Associates GmbH. All rights reserved.</span>
     <div class="footer-links">
       <a href="privacy-policy.html" data-en="Privacy Policy" data-de="Datenschutz">Privacy Policy</a>
       <a href="imprint.html" data-en="Imprint" data-de="Impressum">Imprint</a>
@@ -119,40 +139,33 @@ footer{background:var(--c-dark);padding:3rem 0 2rem;color:rgba(255,255,255,0.5);
     </div>
   </div>
 </footer>
+
 <script>
-const contentEN = `<h3>The Problem: Finding Needles in High-Dimensional Haystacks</h3>
-<p>A single tumor biopsy yields 20,000+ gene expressions. Traditional statistics fail to capture non-linear biological relationships. The companion diagnostics market exceeds $6 billion.</p>
-<h3>The Solution: Multi-Omics ML Pipelines</h3>
-<p>Random forests, deep learning autoencoders, and multi-omics integration capture cross-omic interactions. A Swiss firm identified a 12-gene signature with AUC 0.89 vs. 0.71 for PD-L1 alone.</p>
-<h3>The Approach: Discovery Through Regulatory Approval</h3>
-<ul><li>IVDR compliance for EU market access</li><li>Swissmedic alignment through mutual recognition</li><li>FDA SaMD transparency expectations</li></ul>
-<h3>How ANG Associates Can Help</h3>
-<p>We guide the complete biomarker discovery-to-market journey — AI strategy, cross-functional program management, and IT delivery for multi-omics infrastructure.</p>`;
-const contentDE = `<h3>Das Problem: Nadeln im hochdimensionalen Heuhaufen</h3>
-<p>Eine Tumorbiopsie liefert 20.000+ Genexpressionen. Traditionelle Statistik versagt bei nichtlinearen biologischen Beziehungen.</p>
+const contentDE = `<h3>Das Problem: Nadeln im hochdimensionalen Heuhaufen finden</h3>
+<p>Präzisionsmedizin hängt von robusten Biomarkern ab, aber deren Auffindung ist ausserordentlich schwierig. Eine einzelne Tumorbiopsie liefert Expressionsdaten für über 20.000 Gene, Millionen von Methylierungsstellen und Tausende von Proteinen. Traditionelle statistische Ansätze — eingeschränkt durch Multiple-Testing-Korrekturen und lineare Annahmen — versagen bei der Erfassung komplexer, nichtlinearer biologischer Beziehungen. Der Companion-Diagnostics-Markt übersteigt 6 Milliarden Dollar und wächst jährlich um 12%.</p>
 <h3>Die Lösung: Multi-Omics-ML-Pipelines</h3>
-<p>Random Forests, Deep-Learning-Autoencoder und Multi-Omics-Integration erfassen Cross-Omics-Interaktionen. Ein Schweizer Unternehmen identifizierte eine 12-Gen-Signatur (AUC 0,89).</p>
-<h3>Der Ansatz: Von der Entdeckung zur regulatorischen Zulassung</h3>
-<ul><li>IVDR-Konformität für EU-Marktzugang</li><li>Swissmedic-Angleichung</li><li>FDA-SaMD-Transparenzanforderungen</li></ul>
+<p>Moderne ML-Ansätze nutzen komplementäre Algorithmenfamilien. Random Forests liefern robuste Feature-Importance-Rankings. Deep-Learning-Autoencoder komprimieren hochdimensionale Daten in latente Repräsentationen. Multi-Omics-Integration lernt gemeinsame Repräsentationen, die Cross-Omics-Interaktionen erfassen. Ein Schweizer Diagnostikunternehmen identifizierte eine 12-Gen-Signatur mit AUC 0,89 versus 0,71 für PD-L1 allein.</p>
+<h3>Der Ansatz: Von der Entdeckung durch die regulatorische Zulassung</h3>
+<ul><li>IVDR-Konformität für EU-Marktzugang, einschliesslich Annex-XIII-Anforderungen</li>
+<li>Swissmedic-Angleichung durch gegenseitige Anerkennung</li>
+<li>FDA-Erwartungen für KI/ML-basierte SaMD-Transparenz</li>
+<li>Prospektives Validierungsstudiendesign gemäss CLSI EP28-A3c</li></ul>
 <h3>Wie ANG Associates helfen kann</h3>
-<p>Wir begleiten den gesamten Weg von der Biomarker-Entdeckung bis zur Marktreife — KI-Strategie, funktionsübergreifendes Programm-Management und IT-Delivery.</p>`;
+<p>ANG Associates begleitet Diagnostik- und Pharmaunternehmen durch die gesamte Reise von der Biomarker-Entdeckung bis zur Marktreife. Wir bieten KI-Strategie, funktionsübergreifendes Programm-Management und IT-Delivery-Management für die Multi-Omics-Infrastruktur.</p>`;
 let currentLang = localStorage.getItem('ang_lang') || 'en';
+const contentEN = document.getElementById('articleContent').innerHTML;
 
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('ang_lang', lang);
   document.documentElement.lang = lang;
-  document.querySelectorAll('[data-en]').forEach(el => {
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
     const val = el.getAttribute('data-' + lang);
     if (val) el.innerHTML = val;
   });
   document.getElementById('articleContent').innerHTML = lang === 'de' ? contentDE : contentEN;
   document.getElementById('langToggle').textContent = lang === 'en' ? 'DE' : 'EN';
-  document.title = lang === 'en'
-    ? 'Machine Learning in Biomarker Discovery for Precision Medicine – ANG Associates'
-    : 'Machine Learning in der Biomarker-Entdeckung für Präzisionsmedizin – ANG Associates';
 }
-
 document.getElementById('langToggle').onclick = () => setLang(currentLang === 'en' ? 'de' : 'en');
 document.getElementById('hamburger').onclick = () => document.getElementById('navLinks').classList.toggle('open');
 setLang(currentLang);
