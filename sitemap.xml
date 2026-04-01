@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ang-associates.ch/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://ang-associates.ch/articles.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ang-associates.ch/synthetic-data-digital-twins-clinical-trials.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/ai-drug-target-identification-oncology.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/genai-clinical-trial-protocol-design.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/ml-biomarker-discovery-precision-medicine.html</loc><priority>0.8</priority></url>
@@ -22,9 +23,8 @@
   <url><loc>https://ang-associates.ch/program-governance-pharma-enterprise.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/agile-transformation-pharma-safe.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/agile-gxp-compliance-best-practices.html</loc><priority>0.8</priority></url>
+  <url><loc>https://ang-associates.ch/ai-service-desk-transformation-pharma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://ang-associates.ch/ai-intelligent-ticket-resolution-knowledge-management.html</loc><priority>0.8</priority></url>
   <url><loc>https://ang-associates.ch/privacy-policy.html</loc><priority>0.5</priority></url>
   <url><loc>https://ang-associates.ch/imprint.html</loc><priority>0.5</priority></url>
-  <url><loc>https://ang-associates.ch/privacy-policy.html</loc><priority>0.5</priority></url>
-  <url><loc>https://ang-associates.ch/imprint.html</loc><priority>0.5</priority></url>
-  <url><loc>https://ang-associates.ch/synthetic-data-digital-twins-clinical-trials.html</loc><priority>0.8</priority></url>
 </urlset>
